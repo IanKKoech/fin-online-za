@@ -20,21 +20,20 @@ import { Text } from "fin-ui";
 
 const WelcomePage = () => {
   return (
-    <div className="ml-16 mr-16">
+    <div className="font-poppins">
       <div className="font-poppins p-0">
         <Header />
         <div
           className="bg-cover bg-center h-screen flex justify-start items-center"
           style={{
             backgroundImage: `url('/assets/FIN Welcome Page Assets/Header Image/pexels-monstera-production-5996857 1.png')`,
-            opacity: 0.9,
             color: "white",
             paddingLeft: "4rem",
             paddingBottom: "9rem",
           }}
         >
           <div>
-            <p className="pl-4 text-teal left-4 text-4xl">
+            <p className="pl-4 text-teal left-4 text-3xl">
               Welcome to{" "}
               <span style={{ fontWeight: "bold" }}>
                 <br></br>FIN
