@@ -48,7 +48,7 @@ const testimonialData = [
 const Testimonials = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const handleDotClick = (index) => {
+  const handleDotClick = (index: React.SetStateAction<number>) => {
     setSlideIndex(index);
   };
 

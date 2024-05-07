@@ -33,7 +33,7 @@ const WelcomePage = () => {
           }}
         >
           <div>
-            <p className="pl-4 text-teal left-4 text-3xl">
+            <p className="pl-4 text-teal left-4 text-4xl font-light">
               Welcome to{" "}
               <span style={{ fontWeight: "bold" }}>
                 <br></br>FIN
@@ -99,7 +99,7 @@ const WelcomePage = () => {
               </div>
               <div className="p-6">
                 <Text className="text-base" transform="capitalize">
-                  Personal Loans
+                  Flexi Loans
                 </Text>
               </div>
             </div>
@@ -123,7 +123,7 @@ const WelcomePage = () => {
               </div>
               <div className="p-6">
                 <Text transform="capitalize" color="black">
-                  Home Improvement Loans
+                  FIN PAY
                 </Text>
               </div>
             </div>
@@ -139,34 +139,34 @@ const WelcomePage = () => {
         </p>
         <br></br>
         <br></br>
-        <div className="flex justify-center gap-32">
+        <div className="flex justify-center gap-32 font-poppins">
           <div className="flex flex-col items-center">
-            <div className="w-14 h-14 bg-green-300 rounded-full flex justify-center items-center">
-              <img src={pocketBook.src} alt="Icon 1" className="h-8 w-8" />
+            <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
+              <img src={pocketBook.src} alt="Icon 1" className="h-11 w-11" />
             </div>
             <p className="mt-4 ">
               Pay your <br></br> account
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="w-14 h-14 bg-green-300 rounded-full flex justify-center items-center">
-              <img src={union.src} alt="Icon 2" className="h-8 w-8" />
+            <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
+              <img src={union.src} alt="Icon 2" className="h-11 w-11" />
             </div>
             <p className="mt-4">
               Check payment <br></br> options
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="w-14 h-14 bg-green-300 rounded-full flex justify-center items-center">
-              <img src={union1.src} alt="Icon 3" className="h-8 w-8" />
+            <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
+              <img src={union1.src} alt="Icon 3" className="h-11 w-11" />
             </div>
             <p className="mt-4">
               Quick Access <br></br> Finance
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="w-14 h-14 bg-green-300 rounded-full flex justify-center items-center">
-              <img src={union2.src} alt="Icon 4" className="h-8 w-8" />
+            <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
+              <img src={union2.src} alt="Icon 4" className="h-11 w-11" />
             </div>
             <p className="mt-4">
               Online <br></br> Statements
@@ -192,26 +192,26 @@ const WelcomePage = () => {
         <div className="flex justify-center gap-16">
           <div className="flex flex-col items-center mr-100">
             {" "}
-            {/* Added mr-4 for right margin */}
-            <div className="w-16 h-16 rounded-full flex justify-center items-center">
+           
+            <div className="w-16 h-auto rounded-full flex justify-center items-center">
               <img
                 src={applyOnline.src}
                 alt="Icon 1"
                 className="h-15 w-20 ml-20"
               />
             </div>
-            <p className="mt-2 text-gray-600">Apply Online</p>
+            <p className="mt-2 ml-6 text-gray-600">Apply Online</p>
           </div>
           <div className="flex flex-col items-center mr-100">
             {" "}
-            {/* Added mr-4 for right margin */}
+           
             <div className="w-8 h-16 rounded-full flex justify-center items-center">
               <img src={arrow1.src} alt="Icon 2" className="h-5 w-6" />
             </div>
           </div>
           <div className="flex flex-col items-center mr-100">
             {" "}
-            {/* Added mr-4 for right margin */}
+            
             <div className="w-16 h-16 rounded-full flex justify-center items-center">
               <img src={icon11.src} alt="Icon 2" className="h-15 w-12" />
             </div>
@@ -221,7 +221,7 @@ const WelcomePage = () => {
           </div>
           <div className="flex flex-col items-center mr-100">
             {" "}
-            {/* Added mr-4 for right margin */}
+           
             <div className="w-8 h-16 rounded-full flex justify-center items-center">
               <img src={arrow1.src} alt="Icon 3" className="h-5 w-6" />
             </div>
@@ -242,27 +242,27 @@ const WelcomePage = () => {
           Make payments easily
         </p>
         <br></br>
-        <p className="text-black text-center align-middle text-2xl font-light ">
+        <p className="text-black text-center text-pretty text-0xl font-light ">
           We've made paying your account as easy as possible so that you can{" "}
           <br></br>
           make a payment wherever you are.
         </p>
         <br></br>
         <br></br>
-        <div className="flex items-center justify-center">
-          <div className="ml-5 mr-10">
+        <div className="flex items-center justify-center flex-wrap gap-8 md:gap-24">
+          <div className="ml-2 md:ml-5 mr-2 md:mr-10 mb-4 md:mb-0">
             <img src={FNB.src} alt="FNB" className="h-16 w-auto" />
           </div>
 
-          <div className="ml-10 mr-10">
+          <div className="ml-2 md:ml-10 mr-2 md:mr-10 mb-4 md:mb-0">
             <img src={Snap.src} alt="Snap" className="h-14 w-auto" />
           </div>
 
-          <div className="ml-10 mr-10">
+          <div className="ml-2 md:ml-10 mr-2 md:mr-10 mb-4 md:mb-0">
             <img src={payfast.src} alt="PayFast" className="h-14 w-auto" />
           </div>
 
-          <div className="ml-10 mr-10">
+          <div className="ml-2 md:ml-10 mr-2 md:mr-10 mb-4 md:mb-0">
             <img src={ozow.src} alt="Ozow" className="h-14 w-auto" />
           </div>
         </div>
@@ -277,24 +277,6 @@ const WelcomePage = () => {
           <span className="text-green-400">our users</span> are saying
         </p>
         <Testimonials />
-
-        <div className="pl-36">
-          <p className="pl-40 font-semibold text-4xl text-black">
-            Keep up with us by <br></br> signign up for our <br></br>{" "}
-            <span className="font-light">newsletter</span>
-          </p>
-          <br></br>
-          <div className="relative w-96 pl-36">
-            <input
-              type="text"
-              placeholder="Email address"
-              className="w-full pl-2 pr-auto py-2 rounded-l-full rounded-r-full border border-gray-200 focus:outline-none focus:ring focus:border-blue-500 "
-            />
-            <button className="absolute top-0 right-0 px-4 py-2 bg-green-300 text-blue-900 rounded-full ">
-              Subscribe
-            </button>
-          </div>
-        </div>
       </div>
       <Footer />
     </div>

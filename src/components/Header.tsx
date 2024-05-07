@@ -88,26 +88,26 @@ const Header = () => {
       {/* Collapsible Menu */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-16 right-0 bg-white bg-opacity-100 shadow-md rounded-lg py-4 px-2 mt-2">
-          <a href="#" className="block text-sm py-2">
+          <a href="#" className="block text-sm font-normal py-2">
             Our Products
           </a>
-          <a href="#" className="block text-sm py-2">
+          <a href="#" className="block text-sm font-normal py-2">
             Join Fin Pay
           </a>
-          <a href="#" className="block text-sm py-2">
+          <a href="#" className="block text-sm font-normal py-2">
             Fin Pay Portal
           </a>
-          <a href="#" className="block text-sm py-2">
+          <a href="#" className="block text-sm font-normal py-2">
             Contact Us
           </a>
           <Button
-            className="bg-[white] text-[#4bc74b] border-[green] text-sm w-full mt-4"
+            className="bg-[white] text-[#4bc74b] border-[green] text-sm w-full mt-4 font-normal"
           >
             Register
           </Button>
 
           <Button
-            className="bg-[#4bc74b] text-[#000000c4] text-sm w-full mt-2"
+            className="bg-[#4bc74b] text-[#000000c4] text-sm w-full mt-2 font-normal"
           >
             Sign In
           </Button>
