@@ -29,11 +29,11 @@ export const MedicalHome = () => {
         }}
       >
         <div>
-          <p className="pl-4 text-teal left-4 text-3xl sm:text-4xl font-light">
+          <p className="pl-4 pr-6 lg:pr-4 text-teal left-4 text-3xl sm:text-4xl font-light">
             <span style={{ fontWeight: "bold" }}>FIN</span> Medical Loans
           </p>
           <br />
-          <p className="pl-4 text-lg sm:text-2xl text-teal">
+          <p className="pl-4 pr-0 lg:pr-4 text-lg sm:text-2xl text-teal">
             Welcome to{" "}
             <span style={{ fontWeight: "bold" }}>Fin Medical Loans</span>, South
             Africa's niche Medical Financial

@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Testimonials from "@/components/Testomonials";
 import Footer from "@/components/Footer";
+import flexi from "../../../public/assets/FIN Welcome Page Assets/Slider Images/pexels-mikhail-nilov-7534773 1.png";
 import personalLoans from "../../../public/assets/FIN Welcome Page Assets/Slider Images/pexels-terje-sollie-313707 1.png";
 import medicalLoans from "../../../public/assets/FIN Welcome Page Assets/Slider Images/pexels-roger-brown-5125690 1.png";
 import homeImprovement from "../../../public/assets/FIN Welcome Page Assets/Slider Images/Protect-Your-Family-Against-the-Financial-Risk-of-an-RDP-House 1.png";
@@ -72,6 +73,7 @@ const WelcomePage = () => {
                   <input
                     type="email"
                     placeholder="Your email address"
+                    style={{ width: "26rem" }}
                     className="py-1 px-6 sm:px-16 rounded-l-full rounded-r-full border border-gray-250 outline-none focus:ring-2 placeholder-left text-sm sm:text-base"
                   />
                   <button className="absolute right-0 top-0 bottom-0 bg-green-300 text-blue-850 py-1 px-2 sm:px-4 rounded-l-full rounded-r-full ml-1 text-sm sm:text-base">
@@ -87,45 +89,67 @@ const WelcomePage = () => {
         </div>
 
         {/* Beginning of carousel */}
-        <div className="relative bottom-0 left-0 bg-white px-6 sm:pl-80 sm:pr-80 align-middle">
-          <div className="flex justify-center gap-4 sm:justify-between sm:gap-8 flex-wrap">
-            <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mr-4 mb-4 sm:mb-0">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                <img className="rounded-t-lg" src={personalLoans.src} alt="" />
+        <div className="bg-white">
+          <div className="relative bottom-0 left-0 bg-white px-6 sm:pl-80 sm:pr-80 align-middle">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-2 md:gap-4 sm:justify-between mb-4">
+              <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
+                <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                  <img
+                    className="w-full h-auto object-cover rounded-t-lg"
+                    src={flexi.src}
+                    alt=""
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-white text-lg font-semibold">
+                    Flexi Loans
+                  </p>
+                </div>
               </div>
-              <div className="p-6">
-                <Text className="text-base" transform="capitalize">
-                  Flexi Loans
-                </Text>
+              <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
+                <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                  <img
+                    className="w-full h-auto object-cover rounded-t-lg"
+                    src={personalLoans.src}
+                    alt=""
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-white text-lg font-semibold">
+                    Personal Loans
+                  </p>
+                </div>
+              </div>
+              <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
+                <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                  <img
+                    className="w-full h-auto object-cover rounded-t-lg"
+                    src={medicalLoans.src}
+                    alt=""
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-white text-lg font-semibold">
+                    Medical Loans
+                  </p>
+                </div>
+              </div>
+              <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
+                <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                  <img
+                    className="w-full h-auto object-cover rounded-t-lg"
+                    src={homeImprovement.src}
+                    alt=""
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-white text-lg font-semibold">Home Loans</p>
+                </div>
               </div>
             </div>
-            <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mr-4 mb-4 sm:mb-0">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                <img className="rounded-t-lg" src={medicalLoans.src} alt="" />
-              </div>
-              <div className="p-6">
-                <Text transform="capitalize" color="black">
-                  Medical Loans
-                </Text>
-              </div>
-            </div>
-            <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                <img
-                  className="rounded-t-lg"
-                  src={homeImprovement.src}
-                  alt=""
-                />
-              </div>
-              <div className="p-6">
-                <Text transform="capitalize" color="black">
-                  FIN PAY
-                </Text>
-              </div>
-            </div>
+            {/* End of carousel */}
+            <br />
           </div>
-          {/* End of carousel */}
-          <br />
         </div>
       </div>
 
@@ -176,8 +200,6 @@ const WelcomePage = () => {
         <p className="text-gray-800 text-center align-middle text-3xl sm:text-4xl pt-5">
           Managing your Finances
         </p>
-
-        <br />
         <br />
         <p className="text-gray-700 text-center text-pretty text-0xl font-light">
           We're all looking for simpler and easier ways to manage our finances.
@@ -189,36 +211,32 @@ const WelcomePage = () => {
         <br />
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-16">
           <div className="flex flex-col items-center mb-8 md:mb-0">
-            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-center items-center">
-              <img
-                src={applyOnline.src}
-                alt="Icon 1"
-                className="h-full w-full"
-              />
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-start items-center">
+              <img src={applyOnline.src} alt="Icon 1" className="h-20 w-18" />
             </div>
             <p className="mt-2 text-gray-600 text-sm md:text-base">
               Apply Online
             </p>
           </div>
           <div className="flex flex-col items-center mb-8 md:mb-0">
-            <div className="w-8 h-16 md:w-12 md:h-24 rounded-full flex justify-center items-center">
+            <div className="w-8 h-16 md:w-12 md:h-24 rounded-full flex justify-start items-center">
               <img
                 src={arrow1.src}
                 alt="Icon 2"
-                className="h-full w-full sm:h-6 sm:w-8"
+                className="h-full w-auto sm:h-6 sm:w-8"
               />
             </div>
           </div>
           <div className="flex flex-col items-center mb-8 md:mb-0">
-            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-center items-center">
-              <img src={icon11.src} alt="Icon 3" className="h-full w-full" />
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-start items-center">
+              <img src={icon11.src} alt="Icon 3" className="h-20 w-18" />
             </div>
             <p className="mt-2 text-gray-600 text-sm md:text-base">
               Manage your <br /> account
             </p>
           </div>
           <div className="flex flex-col items-center mb-8 md:mb-0">
-            <div className="w-8 h-16 md:w-12 md:h-24 rounded-full flex justify-center items-center">
+            <div className="w-8 h-16 md:w-12 md:h-24 rounded-full flex justify-start items-center">
               <img
                 src={arrow1.src}
                 alt="Icon 3"
@@ -227,8 +245,8 @@ const WelcomePage = () => {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-center items-center">
-              <img src={icon1.src} alt="Icon 4" className="h-full w-full" />
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-start items-center">
+              <img src={icon1.src} alt="Icon 4" className="h-20 w-18" />
             </div>
             <p className="mt-2 text-gray-600 text-sm md:text-base">
               Make easy <br /> repayments
@@ -238,11 +256,11 @@ const WelcomePage = () => {
       </div>
 
       <div className="bg-white">
-        <p className="text-black text-center font-poppins font-weight-300 align-middle text-4xl pt-5">
+        <p className="text-black text-center font-poppins font-weight-300 align-middle text-3xl pt-5">
           Make payments easily
         </p>
         <br></br>
-        <p className="text-black text-center font-poppins font-weight-400 text-lg md:text-xl lg:text-2xl xl:text-2xl leading-8 md:leading-10 lg:leading-12 xl:leading-14">
+        <p className="text-black text-center font-poppins font-weight-400 g md:text-xl lg:text-2xl xl:text-2xl leading-8 md:leading-10 lg:leading-12 xl:leading-14">
           We've made paying your account as easy as possible so that you can{" "}
           <br />
           make a payment wherever you are.
@@ -250,21 +268,30 @@ const WelcomePage = () => {
 
         <br></br>
         <br></br>
+        <br />
         <div className="flex items-center justify-center flex-wrap gap-8 md:gap-24">
           <div className="ml-2 md:ml-5 mb-4 md:mb-0 relative">
-            <img src={FNB.src} alt="FNB" className="h-16 w-auto" />
+            <a href="https://www.fnb.co.za/">
+              <img src={FNB.src} alt="FNB" className="h-16 w-auto" />
+            </a>
           </div>
           <div className="border-r border-black h-14 my-2 md:my-0"></div>
           <div className="mr-2 md:mr-5 mb-4 md:mb-0 relative">
-            <img src={Snap.src} alt="Snap" className="h-14 w-auto" />
+            <a href="https://www.snapscan.co.za/">
+              <img src={Snap.src} alt="Snap" className="h-14 w-auto" />
+            </a>
           </div>
           <div className="border-r border-black h-14 my-2 md:my-0"></div>
           <div className="ml-2 md:ml-5 mb-4 md:mb-0 relative">
-            <img src={payfast.src} alt="PayFast" className="h-14 w-auto" />
+            <a href="https://my.payfast.io/">
+              <img src={payfast.src} alt="PayFast" className="h-14 w-auto" />
+            </a>
           </div>
           <div className="border-r border-black h-14 my-2 md:my-0"></div>
           <div className="mr-2 md:mr-5 mb-4 md:mb-0 relative">
-            <img src={ozow.src} alt="Ozow" className="h-14 w-auto" />
+            <a href="https://ozow.com/">
+              <img src={ozow.src} alt="Ozow" className="h-14 w-auto" />
+            </a>
           </div>
         </div>
       </div>

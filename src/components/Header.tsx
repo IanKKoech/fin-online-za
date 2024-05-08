@@ -24,20 +24,20 @@ const Header = () => {
         className="hidden md:flex items-center space-x-8"
         style={{ fontFamily: "Poppins" }}
       >
-        <a href="#" className="font-light">
+        <a href="#" className="font-normal">
           Our Products
         </a>
-        <a href="#" className="font-light">
+        <a href="#" className="font-normal">
           Join Fin Pay
         </a>
-        <a href="#" className="font-light">
+        <a href="#" className="font-normal">
           Fin Pay Portal
         </a>
-        <a href="#" className="font-light">
+        <a href="#" className="font-normal">
           Contact Us
         </a>
         <Button
-          className="bg-[white] text-[#4bc74b] border-[green] font-light"
+          className="bg-[white] text-[#4bc74b] border-[green] font-normal"
           style={{
             borderRadius: "4.5rem",
             height: "2.5rem",
@@ -48,7 +48,7 @@ const Header = () => {
         </Button>
 
         <Button
-          className="bg-[#4bc74b] text-[#000000c4] font-light"
+          className="bg-[#64f564] text-blue-950 font-normal"
           style={{
             borderRadius: "4.5rem",
             height: "2.5rem",
