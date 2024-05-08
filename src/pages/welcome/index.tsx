@@ -33,21 +33,20 @@ const WelcomePage = () => {
           }}
         >
           <div>
-            <p className="pl-4 text-teal left-4 text-4xl font-light">
+            <p className="pl-4 text-teal left-4 text-3xl sm:text-4xl font-light">
               Welcome to{" "}
               <span style={{ fontWeight: "bold" }}>
-                <br></br>FIN
+                <br />
+                FIN
               </span>{" "}
               South Africa
             </p>
-            <br></br>
-            <p></p>
-            <br></br>
-            <p className="pl-4 text-2xl text-teal">
+            <br />
+            <p className="pl-4 text-lg sm:text-2xl text-teal">
               We empower you to take control of your credit requirements and
-              financial planning. Our <br></br>
-              tailored credit solutions are designed to accomodate your unique
-              needs, leveraging <br></br>
+              financial planning. Our <br />
+              tailored credit solutions are designed to accommodate your unique
+              needs, leveraging <br />
               your positive payment history to offer more favorable repayment
               options.
             </p>
@@ -62,7 +61,7 @@ const WelcomePage = () => {
             }}
           >
             <br />
-            <p className="text-3xl text-black align-middle text-center">
+            <p className="text-lg sm:text-2xl text-black align-middle text-center">
               Do you want to know if you qualify for a loan today?
             </p>
 
@@ -73,27 +72,24 @@ const WelcomePage = () => {
                   <input
                     type="email"
                     placeholder="Your email address"
-                    className="py-1 px-16 rounded-l-full rounded-r-full border border-gray-250 outline-none focus:ring-2 placeholder-left"
+                    className="py-1 px-6 sm:px-16 rounded-l-full rounded-r-full border border-gray-250 outline-none focus:ring-2 placeholder-left text-sm sm:text-base"
                   />
-
-                  <button className=" absolute right-0 top-0 bottom-0 bg-green-300 text-blue-950 py-2 px-2 rounded-l-full rounded-r-full ml-1">
+                  <button className="absolute right-0 top-0 bottom-0 bg-green-300 text-blue-850 py-1 px-2 sm:px-4 rounded-l-full rounded-r-full ml-1 text-sm sm:text-base">
                     Apply Now
                   </button>
                 </div>
-                <br></br>
+                <br />
               </div>
             </div>
-            <br></br>
-            <br></br>
+            <br />
+            <br />
           </div>
         </div>
 
         {/* Beginning of carousel */}
-        <div className="relative bottom-0 left-0 bg-white pl-80 pr-80 align-middle">
-          <div className="flex justify-center">
-            {" "}
-            {/* Added justify-center */}
-            <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mr-4">
+        <div className="relative bottom-0 left-0 bg-white px-6 sm:pl-80 sm:pr-80 align-middle">
+          <div className="flex justify-center gap-4 sm:justify-between sm:gap-8 flex-wrap">
+            <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mr-4 mb-4 sm:mb-0">
               <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <img className="rounded-t-lg" src={personalLoans.src} alt="" />
               </div>
@@ -103,17 +99,17 @@ const WelcomePage = () => {
                 </Text>
               </div>
             </div>
-            <div className="lock max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mr-4">
+            <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mr-4 mb-4 sm:mb-0">
               <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <img className="rounded-t-lg" src={medicalLoans.src} alt="" />
               </div>
               <div className="p-6">
-                <Text tranform="capitalize" color="black">
+                <Text transform="capitalize" color="black">
                   Medical Loans
                 </Text>
               </div>
             </div>
-            <div className="lock max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 ">
+            <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
               <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <img
                   className="rounded-t-lg"
@@ -129,57 +125,59 @@ const WelcomePage = () => {
             </div>
           </div>
           {/* End of carousel */}
-          <br></br>
+          <br />
         </div>
       </div>
 
-      <div className="bg-white p-10 text-black bottom-0 ">
-        <p className="text-black text-center align-middle text-4xl pt-20 ">
+      <div className="bg-white p-10 text-black bottom-0">
+        <p className="text-black text-center align-middle text-3xl sm:text-4xl pt-15">
           Quick Access
         </p>
-        <br></br>
-        <br></br>
-        <div className="flex justify-center gap-32 font-poppins">
+
+        <br />
+        <br />
+        <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
               <img src={pocketBook.src} alt="Icon 1" className="h-11 w-11" />
             </div>
-            <p className="mt-4 ">
-              Pay your <br></br> account
+            <p className="mt-4 text-center">
+              Pay your <br /> account
             </p>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
               <img src={union.src} alt="Icon 2" className="h-11 w-11" />
             </div>
-            <p className="mt-4">
-              Check payment <br></br> options
+            <p className="mt-4 text-center">
+              Check payment <br /> options
             </p>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
               <img src={union1.src} alt="Icon 3" className="h-11 w-11" />
             </div>
-            <p className="mt-4">
-              Quick Access <br></br> Finance
+            <p className="mt-4 text-center">
+              Quick Access <br /> Finance
             </p>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
               <img src={union2.src} alt="Icon 4" className="h-11 w-11" />
             </div>
-            <p className="mt-4">
-              Online <br></br> Statements
+            <p className="mt-4 text-center">
+              Online <br /> Statements
             </p>
           </div>
         </div>
       </div>
 
       <div className="bg-gray-200 pb-5">
-        <p className="text-gray-800 text-center align-middle text-4xl pt-5 ">
+        <p className="text-gray-800 text-center align-middle text-3xl sm:text-4xl pt-5">
           Managing your Finances
         </p>
-        <br></br>
+
+        <br />
         <br />
         <p className="text-gray-700 text-center text-pretty text-0xl font-light">
           We're all looking for simpler and easier ways to manage our finances.
@@ -187,50 +185,52 @@ const WelcomePage = () => {
         <p className="text-gray-700 text-center text-pretty text-2rem font-light">
           We do just that, for you.
         </p>
-        <br></br>
-        <br></br>
-        <div className="flex justify-center gap-16">
-          <div className="flex flex-col items-center mr-100">
-            {" "}
-           
-            <div className="w-16 h-auto rounded-full flex justify-center items-center">
+        <br />
+        <br />
+        <div className="flex flex-col md:flex-row items-center justify-center md:gap-16">
+          <div className="flex flex-col items-center mb-8 md:mb-0">
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-center items-center">
               <img
                 src={applyOnline.src}
                 alt="Icon 1"
-                className="h-15 w-20 ml-20"
+                className="h-full w-full"
               />
             </div>
-            <p className="mt-2 ml-6 text-gray-600">Apply Online</p>
+            <p className="mt-2 text-gray-600 text-sm md:text-base">
+              Apply Online
+            </p>
           </div>
-          <div className="flex flex-col items-center mr-100">
-            {" "}
-           
-            <div className="w-8 h-16 rounded-full flex justify-center items-center">
-              <img src={arrow1.src} alt="Icon 2" className="h-5 w-6" />
+          <div className="flex flex-col items-center mb-8 md:mb-0">
+            <div className="w-8 h-16 md:w-12 md:h-24 rounded-full flex justify-center items-center">
+              <img
+                src={arrow1.src}
+                alt="Icon 2"
+                className="h-full w-full sm:h-6 sm:w-8"
+              />
             </div>
           </div>
-          <div className="flex flex-col items-center mr-100">
-            {" "}
-            
-            <div className="w-16 h-16 rounded-full flex justify-center items-center">
-              <img src={icon11.src} alt="Icon 2" className="h-15 w-12" />
+          <div className="flex flex-col items-center mb-8 md:mb-0">
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-center items-center">
+              <img src={icon11.src} alt="Icon 3" className="h-full w-full" />
             </div>
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 text-sm md:text-base">
               Manage your <br /> account
             </p>
           </div>
-          <div className="flex flex-col items-center mr-100">
-            {" "}
-           
-            <div className="w-8 h-16 rounded-full flex justify-center items-center">
-              <img src={arrow1.src} alt="Icon 3" className="h-5 w-6" />
+          <div className="flex flex-col items-center mb-8 md:mb-0">
+            <div className="w-8 h-16 md:w-12 md:h-24 rounded-full flex justify-center items-center">
+              <img
+                src={arrow1.src}
+                alt="Icon 3"
+                className="h-full w-full sm:h-6 sm:w-8"
+              />
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 rounded-full flex justify-center items-center">
-              <img src={icon1.src} alt="Icon 4" className="h-15 w-20" />
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-center items-center">
+              <img src={icon1.src} alt="Icon 4" className="h-full w-full" />
             </div>
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 text-sm md:text-base">
               Make easy <br /> repayments
             </p>
           </div>
@@ -238,31 +238,32 @@ const WelcomePage = () => {
       </div>
 
       <div className="bg-white">
-        <p className="text-black text-center align-middle text-3xl pt-5">
+        <p className="text-black text-center font-poppins font-weight-300 align-middle text-4xl pt-5">
           Make payments easily
         </p>
         <br></br>
-        <p className="text-black text-center text-pretty text-0xl font-light ">
+        <p className="text-black text-center font-poppins font-weight-400 text-lg md:text-xl lg:text-2xl xl:text-2xl leading-8 md:leading-10 lg:leading-12 xl:leading-14">
           We've made paying your account as easy as possible so that you can{" "}
-          <br></br>
+          <br />
           make a payment wherever you are.
         </p>
+
         <br></br>
         <br></br>
         <div className="flex items-center justify-center flex-wrap gap-8 md:gap-24">
-          <div className="ml-2 md:ml-5 mr-2 md:mr-10 mb-4 md:mb-0">
+          <div className="ml-2 md:ml-5 mb-4 md:mb-0 relative">
             <img src={FNB.src} alt="FNB" className="h-16 w-auto" />
           </div>
-
-          <div className="ml-2 md:ml-10 mr-2 md:mr-10 mb-4 md:mb-0">
+          <div className="border-r border-black h-14 my-2 md:my-0"></div>
+          <div className="mr-2 md:mr-5 mb-4 md:mb-0 relative">
             <img src={Snap.src} alt="Snap" className="h-14 w-auto" />
           </div>
-
-          <div className="ml-2 md:ml-10 mr-2 md:mr-10 mb-4 md:mb-0">
+          <div className="border-r border-black h-14 my-2 md:my-0"></div>
+          <div className="ml-2 md:ml-5 mb-4 md:mb-0 relative">
             <img src={payfast.src} alt="PayFast" className="h-14 w-auto" />
           </div>
-
-          <div className="ml-2 md:ml-10 mr-2 md:mr-10 mb-4 md:mb-0">
+          <div className="border-r border-black h-14 my-2 md:my-0"></div>
+          <div className="mr-2 md:mr-5 mb-4 md:mb-0 relative">
             <img src={ozow.src} alt="Ozow" className="h-14 w-auto" />
           </div>
         </div>

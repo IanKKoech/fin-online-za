@@ -16,40 +16,43 @@ const Header = () => {
   };
 
   return (
-    <header className="p-3 flex justify-between items-center bg-white text-[#000000c4] font-medium">
+    <header className="font-poppins font-thin p-3 flex justify-between items-center bg-white text-[black]">
       <img src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" />
 
       {/* Navigation Menu */}
-      <nav className="hidden md:flex items-center space-x-8">
-        <a href="#" className="text-sm font-medium">
+      <nav
+        className="hidden md:flex items-center space-x-8"
+        style={{ fontFamily: "Poppins" }}
+      >
+        <a href="#" className="font-light">
           Our Products
         </a>
-        <a href="#" className="text-sm font-medium">
+        <a href="#" className="font-light">
           Join Fin Pay
         </a>
-        <a href="#" className="text-sm font-medium">
+        <a href="#" className="font-light">
           Fin Pay Portal
         </a>
-        <a href="#" className="text-sm font-medium">
+        <a href="#" className="font-light">
           Contact Us
         </a>
         <Button
-          className="bg-[white] text-[#4bc74b] border-[green] text-sm"
+          className="bg-[white] text-[#4bc74b] border-[green] font-light"
           style={{
             borderRadius: "4.5rem",
             height: "2.5rem",
-            width: "8rem", 
+            width: "6rem",
           }}
         >
           Register
         </Button>
 
         <Button
-          className="bg-[#4bc74b] text-[#000000c4] text-sm"
+          className="bg-[#4bc74b] text-[#000000c4] font-light"
           style={{
             borderRadius: "4.5rem",
             height: "2.5rem",
-            width: "8rem",
+            width: "6rem",
           }}
         >
           Sign In
@@ -87,7 +90,10 @@ const Header = () => {
 
       {/* Collapsible Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 right-0 bg-white bg-opacity-100 shadow-md rounded-lg py-4 px-2 mt-2">
+        <div
+          className="md:hidden absolute top-16 right-0 bg-white bg-opacity-100 shadow-md rounded-lg py-4 px-2 mt-2"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
           <a href="#" className="block text-sm font-normal py-2">
             Our Products
           </a>
@@ -100,19 +106,16 @@ const Header = () => {
           <a href="#" className="block text-sm font-normal py-2">
             Contact Us
           </a>
-          <Button
-            className="bg-[white] text-[#4bc74b] border-[green] text-sm w-full mt-4 font-normal"
-          >
+          <Button className="bg-[white] text-[#4bc74b] border-[green] text-sm w-full mt-4 font-normal">
             Register
           </Button>
 
-          <Button
-            className="bg-[#4bc74b] text-[#000000c4] text-sm w-full mt-2 font-normal"
-          >
+          <Button className="bg-[#4bc74b] text-[#000000c4] text-sm w-full mt-2 font-normal">
             Sign In
           </Button>
         </div>
       )}
+      
     </header>
   );
 };
