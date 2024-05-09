@@ -4,7 +4,7 @@ import socials from "../../public/assets/Frame 14447.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-4">
+    <footer className="bg-black text-white py-4 pt-10">
       <div className="container flex flex-wrap justify-center text-md gap-6">
         <div className="flex flex-col items-center mx-4 mb-4 sm:mb-0">
           <img src={FinLogo.src} alt="" className="h-14 w-auto mb-2" />

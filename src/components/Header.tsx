@@ -21,7 +21,7 @@ const Header = () => {
 
       {/* Navigation Menu */}
       <nav
-        className="hidden md:flex items-center space-x-8"
+        className="hidden md:flex items-center space-x-4"
         style={{ fontFamily: "Poppins" }}
       >
         <a href="#" className="font-normal">
@@ -48,7 +48,7 @@ const Header = () => {
         </Button>
 
         <Button
-          className="bg-[#64f564] text-blue-950 font-normal"
+          className="bg-[#a2f8a2] text-blue-950 font-normal"
           style={{
             borderRadius: "4.5rem",
             height: "2.5rem",

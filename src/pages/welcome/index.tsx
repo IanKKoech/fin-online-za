@@ -297,15 +297,22 @@ const WelcomePage = () => {
       </div>
 
       <div className="bg-white pt-4 pb-4">
-        <p></p>
-        <br></br>
-        <br></br>
-        <p className="text-center align-middle text-3xl text-black font-light">
-          Still on the fence, here's what <br></br>{" "}
-          <span className="text-green-400">our users</span> are saying
-        </p>
-        <Testimonials />
+        <div className="container mx-auto px-4">
+          <p></p>
+          <br />
+          <br />
+          <p className="text-center text-3xl text-black font-light">
+            Still on the fence? Here's what <br />
+            <span className="text-green-400">our users</span> are saying
+          </p>
+          <div className="flex justify-center">
+            <div className="w-full md:w-4/5 lg:w-3/5 xl:w-2/3">
+              <Testimonials />
+            </div>
+          </div>
+        </div>
       </div>
+
       <Footer />
     </div>
   );

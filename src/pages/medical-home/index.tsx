@@ -44,6 +44,7 @@ export const MedicalHome = () => {
           </p>
         </div>
       </div>
+
       <div className="relative" style={{ marginTop: "-4rem" }}>
         <div
           className="relative bottom-0 left-0 w-full bg-white text-black overflow-hidden"
@@ -60,7 +61,8 @@ export const MedicalHome = () => {
               <div className="relative flex">
                 <input
                   type="email"
-                  placeholder="Find a medical partner near me"
+                  placeholder="Find a medical partner near you"
+                  style={{ width: "26rem" }}
                   className="py-1 px-6 sm:px-16 rounded-l-full rounded-r-full border border-gray-250 outline-none focus:ring-2 placeholder-left text-sm sm:text-base"
                 />
                 <button className="absolute right-0 top-0 bottom-0 bg-green-300 text-blue-850 py-1 px-2 sm:px-4 rounded-l-full rounded-r-full ml-1 text-sm sm:text-base">
@@ -87,45 +89,61 @@ export const MedicalHome = () => {
           </div>
           <div className="bg-white">
             <div className="relative bottom-0 left-0 bg-white px-6 sm:pl-80 sm:pr-80 align-middle">
-              <div className="flex flex-col sm:flex-row gap-4 sm:justify-between mb-4">
-                <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                    <img className="rounded-t-lg" src={facial.src} alt="" />
-                  </div>
-                  <div className="p-6">
-                    <p className="text-white">Cosmetic Surgery</p>
-                  </div>
-                </div>
-                <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                    <img className="rounded-t-lg" src={dental.src} alt="" />
-                  </div>
-                  <div className="p-6">
-                    <p className="text-white">Dental Surgery</p>
-                  </div>
-                </div>
-                <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-2 md:gap-4 sm:justify-between mb-4">
+                <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
+                  <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                     <img
-                      className="rounded-t-lg"
+                      className="w-full h-auto object-cover rounded-t-lg"
+                      src={facial.src}
+                      alt=""
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="text-white text-lg font-semibold">
+                      Cosmetic Surgery
+                    </p>
+                  </div>
+                </div>
+                <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
+                  <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                    <img
+                      className="w-full h-auto object-cover rounded-t-lg"
+                      src={dental.src}
+                      alt=""
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="text-white text-lg font-semibold">
+                      Dental Surgery
+                    </p>
+                  </div>
+                </div>
+                <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
+                  <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                    <img
+                      className="w-full h-auto object-cover rounded-t-lg"
                       src={hearingImage.src}
                       alt=""
                     />
                   </div>
-                  <div className="p-6">
-                    <p className="text-white">Hearing/Audiology</p>
+                  <div className="p-4">
+                    <p className="text-white text-lg font-semibold">
+                      Hearing/Audiology
+                    </p>
                   </div>
                 </div>
-                <div className="block max-w-[18rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
+                  <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                     <img
-                      className="rounded-t-lg"
+                      className="w-full h-auto object-cover rounded-t-lg"
                       src={stethescopeImage.src}
                       alt=""
                     />
                   </div>
-                  <div className="p-6">
-                    <p className="text-white">General Healthcare</p>
+                  <div className="p-4">
+                    <p className="text-white text-lg font-semibold">
+                      General Healthcare
+                    </p>
                   </div>
                 </div>
               </div>

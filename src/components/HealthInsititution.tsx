@@ -10,11 +10,18 @@ const HealthInstitutions = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleArrowClick = (index: React.SetStateAction<number>) => {
-    setSlideIndex(index)
-  }
+    setSlideIndex(index);
+  };
 
   return (
     <div className="bg-gray-300 p-4">
+      <style>
+        {`
+          .fertility-image {
+            transform: scale(0.6); /* Reduce the size of the fertility image by 60% */
+          }
+        `}
+      </style>
       <Carousel
         showArrows={true}
         showThumbs={false}
@@ -24,32 +31,28 @@ const HealthInstitutions = () => {
         centerSlidePercentage={50}
         className="carousel-container"
       >
-        <div>
+        <div className="h-auto w-80 pt-10">
           <img
             src={mediConnectImage.src}
             alt="MediConnect Logo"
             className="carousel-image"
           />
         </div>
-        <div>
+        <div className="h-auto w-80 pt-16">
           <img
             src={advanceImage.src}
             alt="Advance"
             className="carousel-image"
           />
         </div>
-        <div>
-          <img
-            src={krstlImage.src}
-            alt="Krystal"
-            className="carousel-image"
-          />
+        <div className="h-auto w-80 pt-10">
+          <img src={krstlImage.src} alt="Krystal" className="carousel-image" />
         </div>
-        <div>
+        <div className="h-auto w-80">
           <img
             src={fertilitySolutionsImage.src}
             alt="Fertility Solutions"
-            className="carousel-image"
+            className="carousel-image fertility-image h-4 w-auto" 
           />
         </div>
       </Carousel>
