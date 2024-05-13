@@ -71,7 +71,7 @@ const Login = () => {
 
           <br />
           <br />
-          <div className="justify-center align-middle text-black font-thin pl-12">
+          <div className="justify-center align-middle text-black font-thin pl-12 text-sm">
             <p>
               Don't have an Account ?{" "}
               <span className="font-semibold">Register</span>
