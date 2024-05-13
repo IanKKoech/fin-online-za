@@ -53,6 +53,7 @@ const WelcomePage = () => {
             </p>
           </div>
         </div>
+        
         <div className="relative">
           <div
             className="absolute bottom-0 left-0 w-full bg-white text-black overflow-hidden"
