@@ -136,7 +136,7 @@ export const AboutUs = () => {
         </div>
       </div>
 
-      <div className="bg-white p-60"></div>
+      <div className="bg-white pt-60"></div>
 
       <Footer />
     </div>

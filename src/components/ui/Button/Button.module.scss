@@ -1,0 +1,134 @@
+.root {
+  @apply mb-1 inline-block rounded-lg rounded-full items-center justify-center transition duration-200 ease-linear focus:outline-0 focus:ring focus:ring-offset-2 dark:ring-offset-blue-dark;
+  &:hover {
+    @apply opacity-80;
+  }
+
+  &:disabled {
+    @apply cursor-not-allowed bg-gray-100 opacity-100 text-black dark:text-gray-300 dark:bg-blue-darker dark:bg-opacity-60;
+  }
+}
+
+.dFlex {
+  @apply flex items-center gap-3 md:gap-5;
+}
+
+.dFlexSm {
+  @apply flex items-center gap-2;
+}
+
+.primary {
+  @apply bg-primary text-black focus:ring-primary;
+  &:active:not(:disabled) {
+    @apply bg-green-darker opacity-100;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+  @apply bg-primary text-black focus:ring-primary;
+  &:active:not(:disabled) {
+    @apply bg-green-darker opacity-100;
+  }
+}
+
+.danger {
+  @apply bg-danger text-black focus:ring-danger;
+  &:active:not(:disabled) {
+    @apply bg-[#b91c1c] opacity-100;
+  }
+}
+.info {
+  @apply bg-info text-black focus:ring-info;
+  &:active:not(:disabled) {
+    @apply bg-[#0f766e] opacity-100;
+  }
+}
+.warning {
+  @apply bg-warning text-black focus:ring-warning;
+  &:active:not(:disabled) {
+    @apply bg-[#ca8a04] opacity-100;
+  }
+}
+.active {
+  @apply border border-primary bg-primary text-black;
+  &:active:not(:disabled) {
+    @apply bg-gray-400 opacity-100;
+  }
+}
+
+.secondary {
+  @apply bg-secondary bg-opacity-100 text-white;
+  &:active:not(:disabled) {
+    @apply bg-gray-100 text-gray-300;
+  }
+
+  &:hover {
+    @apply bg-green-light bg-opacity-100 opacity-100 text-black;
+  }
+}
+
+.outline {
+  @apply border border-gray-100 bg-white hover:bg-gray-50 ring-primary dark:text-black dark:bg-blue-dark dark:border-gray-300 dark:hover:bg-blue-darker;
+  &:active:not(:disabled) {
+    @apply border-gray-200 text-primary opacity-100;
+  }
+
+  &:hover {
+    @apply opacity-100;
+  }
+}
+
+.outlinedanger {
+  @apply border border-danger text-danger bg-white hover:bg-gray-50 ring-danger dark:text-black dark:bg-blue-dark dark:border-gray-300 dark:hover:bg-blue-darker;
+  &:active:not(:disabled) {
+    @apply border-gray-200 text-primary opacity-100;
+  }
+
+  &:hover {
+    @apply opacity-100;
+  }
+}
+
+.dashboardPrimary{
+  @apply flex items-center bg-secondary border border-secondary rounded-[27px] h-[46px] min-w-[153px] text-white font-medium text-sm leading-[10px] ml-[-2px] mr-[-2px]
+
+}
+
+.dashboardSecondary{
+  @apply flex items-center bg-white border border-white text-sm leading-[10px] rounded-[27px] h-[46px] min-w-[153px] ;
+
+}
+
+
+
+.naked {
+  @apply bg-primary/10 border border-primary/20 font-semibold text-primary focus:ring-primary/40;
+  &:active:not(:disabled) {
+    @apply bg-primary bg-opacity-20;
+  }
+}
+
+.sm {
+  @apply px-3 py-2;
+}
+
+.md {
+  @apply px-4 py-[0.8rem];
+}
+
+.lg {
+  @apply px-7 py-4 font-medium;
+}

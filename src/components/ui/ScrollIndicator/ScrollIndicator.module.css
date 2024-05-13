@@ -1,0 +1,23 @@
+/* components/ScrollIndicator.module.css */
+.scrollIndicator {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.show {
+  opacity: 0.8;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}

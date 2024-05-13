@@ -1,0 +1,51 @@
+.root {
+  @apply flex;
+}
+
+.alignStart {
+  @apply items-start;
+}
+
+.alignEnd {
+  @apply items-end;
+}
+
+.alignCenter {
+  @apply items-center;
+}
+
+.justifyStart {
+  @apply justify-start;
+}
+
+.justifyEnd {
+  @apply justify-end;
+}
+
+.justifyCenter {
+  @apply justify-center;
+}
+
+.justifyBetween {
+  @apply justify-between;
+}
+
+.justifyAround {
+  @apply justify-around;
+}
+
+.directionRow {
+  @apply flex-row;
+}
+
+.directionRowReverse {
+  @apply flex-row-reverse;
+}
+
+.directionColumn {
+  @apply flex-col;
+}
+
+.directionColumnReverse {
+  @apply flex-col-reverse;
+}

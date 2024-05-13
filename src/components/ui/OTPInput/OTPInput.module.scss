@@ -1,0 +1,57 @@
+.otp-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.otp-input-boxes {
+  display: flex;
+}
+
+.otp-input {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  border-color: #ccc;
+  color: #000;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+  padding: 0;
+
+  &::placeholder {
+    color: #ccc;
+  }
+
+  &:focus {
+    border-color:  #64EBA9;
+    outline: none;
+    box-shadow: 0 0 0 2px  #64EBA9;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  &.dark {
+    border-color: #333;
+    color: #fff;
+    background-color: transparent;
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.reveal-password-button {
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
