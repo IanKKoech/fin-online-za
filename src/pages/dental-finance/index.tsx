@@ -71,29 +71,22 @@ export const FinDentalLoans = () => {
             </p>
             <br />
             <br />
-            <div className="bg-white">
-              <p className="text-black text-center align-middle text-3xl pt-5">
-                What can I cover with dental finance ?
-              </p>
-              <br />
-              <br />
-              <div className="row">
-                <ul className="col">
-                  <li>Teeth Whitening</li>
-                  <li>Braces</li>
-                  <li>Veneer Teeth</li>
-                </ul>
-                <ul className="col">
-                  <li>Aligners</li>
-                  <li>Porcelain & Composite Veneers</li>
-                  <li>Porcelain Bridgework</li>
-                </ul>
-                <ul className="col">
-                  <li>Dental Implants</li>
-                  <li>Cosmetic Gum Surgery</li>
-                  <li>And More...</li>
-                </ul>
-              </div>
+            <div className="row">
+              <ul className="col">
+                <li>Teeth Whitening</li>
+                <li>Braces</li>
+                <li>Veneer Teeth</li>
+              </ul>
+              <ul className="col">
+                <li>Aligners</li>
+                <li>Porcelain & Composite Veneers</li>
+                <li>Porcelain Bridgework</li>
+              </ul>
+              <ul className="col">
+                <li>Dental Implants</li>
+                <li>Cosmetic Gum Surgery</li>
+                <li>And More...</li>
+              </ul>
             </div>
           </div>
 
@@ -317,13 +310,13 @@ export const FinDentalLoans = () => {
               <br />
               <br />
               <span className="text-2xl font-light">
-                Choose your ideal partner from our extensive selection of listed stores.
+                Choose your ideal partner from our extensive selection of listed
+                stores.
               </span>
             </p>
           </div>
 
           <Testimonials />
-
         </div>
       </div>
       <Footer />
