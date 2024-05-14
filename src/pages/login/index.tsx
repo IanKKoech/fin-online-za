@@ -73,7 +73,7 @@ const Login = () => {
           <br />
           <div className="justify-center align-middle text-black font-thin pl-12 text-sm">
             <p>
-              Don't have an Account ?{" "}
+              Don&apos;t have an Account ?{" "}
               <span className="font-semibold">Register</span>
             </p>
           </div>

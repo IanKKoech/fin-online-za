@@ -16,7 +16,7 @@ export const FinShoppingPartner = () => {
       <div
         className="bg-cover bg-center h-screen flex justify-start items-center"
         style={{
-          backgroundImage: `url('/assets/medicalLoansImage.jpg')`,
+          backgroundImage: `url(&apos;/assets/medicalLoansImage.jpg&apos;)`,
           color: "white",
           paddingLeft: "4rem",
           paddingBottom: "9rem",
@@ -88,7 +88,7 @@ export const FinShoppingPartner = () => {
             </p>
             <div className="text-left ml-2">
               <p>
-                We'll get back to you within <br /> a business hour
+                We&apos;ll get back to you within <br /> a business hour
               </p>
             </div>
           </div>
@@ -116,7 +116,7 @@ export const FinShoppingPartner = () => {
           <br />
           <span className="text-2xl font-light">
             See what other documents we accept view our{" "}
-            <span className="underline font-bold">FAQ's</span>
+            <span className="underline font-bold">FAQ&apos;s</span>
           </span>
         </p>
         <br />
@@ -220,8 +220,8 @@ export const FinShoppingPartner = () => {
             All our loans include{" "}
             <span className="font-bold">Credit Life Insurance,</span>{" "}
             safeguarding you against unforeseen insurable events that could
-            affect your ability to repay. Gain peace of mind knowing you're
-            protected. You'll receive courage for.
+            affect your ability to repay. Gain peace of mind knowing you&apos;re
+            protected. You&apos;ll receive courage for.
           </span>
         </p>
 

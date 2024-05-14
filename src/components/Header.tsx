@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import darkModeIcon from "../../public/assets/FIN Welcome Page Assets/dark-mode 1.png";
 import { Button } from "fin-ui";
 import logo from "../../public/assets/FIN Welcome Page Assets/Fin Logo (1).png";
+import Link from "next/link";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -29,32 +30,32 @@ const Header = () => {
         style={{ fontFamily: "Poppins" }}
       >
         <div className="relative">
-          <a href="#" className="font-normal" onClick={toggleMenu}>
+          <Link href="#" className="font-normal" onClick={toggleMenu}>
             Our Products
-          </a>
+          </Link>
           {isMenuOpen && (
             <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-lg py-2 px-4 mt-1">
-              <a href="/dental-finance" className="block py-1" onClick={closeMenu}>
+              <Link href="/dental-finance" className="block py-1" onClick={closeMenu}>
                 Medical Loan
-              </a>
-              <a href="/flexi-loans" className="block py-1" onClick={closeMenu}>
+              </Link>
+              <Link href="/flexi-loans" className="block py-1" onClick={closeMenu}>
                 Flexi Loan
-              </a>
-              <a href="/shopping-partners" className="block py-1" onClick={closeMenu}>
+              </Link>
+              <Link href="/shopping-partners" className="block py-1" onClick={closeMenu}>
                 Online Loan
-              </a>
+              </Link>
             </div>
           )}
         </div>
-        <a href="/https://client.fin-connect.net/auth/signUp" className="font-normal">
+        <Link href="/https://client.fin-connect.net/auth/signUp" className="font-normal">
           Join Fin Pay
-        </a>
-        <a href="/https://client.fin-connect.net/auth/signIn" className="font-normal">
+        </Link>
+        <Link href="/https://client.fin-connect.net/auth/signIn" className="font-normal">
           Fin Pay Portal
-        </a>
-        <a href="#" className="font-normal">
+        </Link>
+        <Link href="#" className="font-normal">
           Contact Us
-        </a>
+        </Link>
         <Button
           className="bg-[white] text-[#31c231] border-[green] font-normal"
           style={{
@@ -63,7 +64,7 @@ const Header = () => {
             width: "6rem",
           }}
         >
-          <a href="/register">Register</a>
+          <Link href="/register">Register</Link>
         </Button>
 
         <Button
@@ -74,7 +75,7 @@ const Header = () => {
             width: "6rem",
           }}
         >
-          <a href="/login">Sign In</a>
+          <Link href="/login">Sign In</Link>
         </Button>
         <button
           className="mr-4 text-sm"
@@ -113,22 +114,22 @@ const Header = () => {
           className="md:hidden absolute top-16 right-0 bg-white bg-opacity-100 shadow-md rounded-lg py-4 px-2 mt-2"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
-          <a
+          <Link
             href="#"
             className="block text-sm font-normal py-2"
             onClick={closeMenu}
           >
             Our Products
-          </a>
-          <a href="#" className="block text-sm font-normal py-2">
+          </Link>
+          <Link href="#" className="block text-sm font-normal py-2">
             Join Fin Pay
-          </a>
-          <a href="#" className="block text-sm font-normal py-2">
+          </Link>
+          <Link href="#" className="block text-sm font-normal py-2">
             Fin Pay Portal
-          </a>
-          <a href="#" className="block text-sm font-normal py-2">
+          </Link>
+          <Link href="#" className="block text-sm font-normal py-2">
             Contact Us
-          </a>
+          </Link>
           <Button className="bg-[white] text-[#4bc74b] border-[green] text-sm w-full mt-4 font-normal">
             Register
           </Button>

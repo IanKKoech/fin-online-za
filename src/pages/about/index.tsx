@@ -8,7 +8,7 @@ export const AboutUs = () => {
       <div
         className="bg-cover bg-center h-screen flex justify-start items-center"
         style={{
-          backgroundImage: `url('/assets/FIN Online Loans V1-3/About-us-image.jpg')`,
+          backgroundImage: `url(&apos;/assets/FIN Online Loans V1-3/About-us-image.jpg&apos;)`,
           color: "white",
           paddingLeft: "4rem",
           paddingBottom: "9rem",
@@ -98,7 +98,7 @@ export const AboutUs = () => {
                 We are never satisfied with <br /> the status quo and <br />{" "}
                 relentlessly seek to improve. <br />
                 Innovation is a natural <br /> output when we <br /> understand
-                people's <br /> motivations individually <br /> and work
+                people&apos;s <br /> motivations individually <br /> and work
                 together as teams <br /> towards a shared <br /> vision.
               </p>
             </div>

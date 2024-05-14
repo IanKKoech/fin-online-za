@@ -9,7 +9,7 @@ import tempDisability from "../../../public/assets/Layer_1.png";
 import permDisability from "../../../public/assets/Vector.png";
 import death from "../../../public/assets/Layer_1-2.png";
 import retrenchment from "../../../public/assets/Layer_1-1.png";
-import { CallToAction } from "@/components/callToAction";
+// import { CallToAction } from "@/components/callToAction";
 
 export const FinDentalLoans = () => {
   return (
@@ -18,7 +18,7 @@ export const FinDentalLoans = () => {
       <div
         className="bg-cover bg-center h-screen flex justify-start items-center"
         style={{
-          backgroundImage: `url('/assets/FIN Welcome Page Assets/Header Image/Surgery Image.jpg')`,
+          backgroundImage: `url(&apos;/assets/FIN Welcome Page Assets/Header Image/Surgery Image.jpg&apos;)`,
           color: "white",
           paddingLeft: "4rem",
           paddingBottom: "9rem",
@@ -33,7 +33,7 @@ export const FinDentalLoans = () => {
             Affordable{" "}
             <span style={{ fontWeight: "bold" }}>Dental Finance</span> to keep
             you smiling. Whiten your teeth or <br />
-            perhaps dental implants, we'll help bring your new smile to life.
+            perhaps dental implants, we&apos;ll help bring your new smile to life.
             Beauty <br />
             begins here, with{" "}
             <span style={{ fontWeight: "bold" }}>Fin Medical Loans.</span>
@@ -154,7 +154,7 @@ export const FinDentalLoans = () => {
                 </p>
                 <div className="text-left ml-2">
                   <p>
-                    We'll get back to you within <br /> a business hour
+                    We&apos;ll get back to you within <br /> a business hour
                   </p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export const FinDentalLoans = () => {
               <br />
               <span className="text-2xl font-light">
                 See what other documents we accept view our{" "}
-                <span className="underline font-bold">FAQ's</span>
+                <span className="underline font-bold">FAQ&apos;s</span>
               </span>
             </p>
             <br />
@@ -286,8 +286,8 @@ export const FinDentalLoans = () => {
                 All our loans include{" "}
                 <span className="font-bold">Credit Life Insurance,</span>{" "}
                 safeguarding you against unforeseen insurable events that could
-                affect your ability to repay. Gain peace of mind knowing you're
-                protected. You'll receive courage for.
+                affect your ability to repay. Gain peace of mind knowing you&apos;re
+                protected. You&apos;ll receive courage for.
               </span>
             </p>
 

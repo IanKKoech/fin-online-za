@@ -18,6 +18,7 @@ import Snap from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 14@
 import payfast from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 15@4x-8.png";
 import ozow from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 16@4x-8.png";
 import { Text } from "fin-ui";
+import Link from "next/link";
 
 const WelcomePage = () => {
   return (
@@ -27,7 +28,7 @@ const WelcomePage = () => {
         <div
           className="bg-cover bg-center h-screen flex justify-start items-center"
           style={{
-            backgroundImage: `url('/assets/FIN Welcome Page Assets/Header Image/pexels-monstera-production-5996857 1.png')`,
+            backgroundImage: `url(&apos;/assets/FIN Welcome Page Assets/Header Image/pexels-monstera-production-5996857 1.png&apos;)`,
             color: "white",
             paddingLeft: "4rem",
             paddingBottom: "9rem",
@@ -94,7 +95,7 @@ const WelcomePage = () => {
           <div className="relative bottom-0 left-0 bg-white px-6 sm:pl-80 sm:pr-80 align-middle">
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-2 md:gap-4 sm:justify-between mb-4">
               <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                <a href="/flexi-loans">
+                <Link href="/flexi-loans">
                   <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                     <img
                       className="w-full h-auto object-cover rounded-t-lg"
@@ -107,10 +108,10 @@ const WelcomePage = () => {
                       Flexi Loans
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                <a href="/flexi-loans">
+                <Link href="/flexi-loans">
                   <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                     <img
                       className="w-full h-auto object-cover rounded-t-lg"
@@ -123,10 +124,10 @@ const WelcomePage = () => {
                       Personal Loans
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                <a href="/medical-home">
+                <Link href="/medical-home">
                   <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                     <img
                       className="w-full h-auto object-cover rounded-t-lg"
@@ -139,10 +140,10 @@ const WelcomePage = () => {
                       Medical Loans
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                <a href="/shopping-partners">
+                <Link href="/shopping-partners">
                   <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                     <img
                       className="w-full h-auto object-cover rounded-t-lg"
@@ -155,7 +156,7 @@ const WelcomePage = () => {
                       Home Loans
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             {/* End of carousel */}
@@ -213,7 +214,7 @@ const WelcomePage = () => {
         </p>
         <br />
         <p className="text-gray-700 text-center text-pretty text-0xl font-light">
-          We're all looking for simpler and easier ways to manage our finances.
+          We&apos;re all looking for simpler and easier ways to manage our finances.
         </p>
         <p className="text-gray-700 text-center text-pretty text-2rem font-light">
           We do just that, for you.
@@ -272,7 +273,7 @@ const WelcomePage = () => {
         </p>
         <br></br>
         <p className="text-black text-center font-poppins font-weight-400 g md:text-xl lg:text-2xl xl:text-2xl leading-8 md:leading-10 lg:leading-12 xl:leading-14">
-          We've made paying your account as easy as possible so that you can{" "}
+          We&apos;ve made paying your account as easy as possible so that you can{" "}
           <br />
           make a payment wherever you are.
         </p>
@@ -282,27 +283,27 @@ const WelcomePage = () => {
         <br />
         <div className="flex items-center justify-center flex-wrap gap-8 md:gap-24">
           <div className="ml-2 md:ml-5 mb-4 md:mb-0 relative">
-            <a href="https://www.fnb.co.za/">
+            <Link href="https://www.fnb.co.za/">
               <img src={FNB.src} alt="FNB" className="h-16 w-auto" />
-            </a>
+            </Link>
           </div>
           <div className="border-r border-black h-14 my-2 md:my-0"></div>
           <div className="mr-2 md:mr-5 mb-4 md:mb-0 relative">
-            <a href="https://www.snapscan.co.za/">
+            <Link href="https://www.snapscan.co.za/">
               <img src={Snap.src} alt="Snap" className="h-14 w-auto" />
-            </a>
+            </Link>
           </div>
           <div className="border-r border-black h-14 my-2 md:my-0"></div>
           <div className="ml-2 md:ml-5 mb-4 md:mb-0 relative">
-            <a href="https://my.payfast.io/">
+            <Link href="https://my.payfast.io/">
               <img src={payfast.src} alt="PayFast" className="h-14 w-auto" />
-            </a>
+            </Link>
           </div>
           <div className="border-r border-black h-14 my-2 md:my-0"></div>
           <div className="mr-2 md:mr-5 mb-4 md:mb-0 relative">
-            <a href="https://ozow.com/">
+            <Link href="https://ozow.com/">
               <img src={ozow.src} alt="Ozow" className="h-14 w-auto" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -313,7 +314,7 @@ const WelcomePage = () => {
           <br />
           <br />
           <p className="text-center text-3xl text-black font-light">
-            Still on the fence? Here's what <br />
+            Still on the fence? Here&apos;s what <br />
             <span className="text-green-400">our users</span> are saying
           </p>
           <div className="flex justify-center">

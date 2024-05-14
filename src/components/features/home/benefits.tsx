@@ -2,7 +2,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { GoCheckCircle } from "react-icons/go";
 import Image from "next/image";
 import lady from "../../../../public/assets/nicelady.png";
-import { Container } from "@/components/ui";
+// import { Container } from "@/components/ui";
 import { useMediaQuery } from "@react-hook/media-query";
 
 export const Benefits = () => {
@@ -17,7 +17,7 @@ export const Benefits = () => {
         <div className="md:w-2/4 self-stretch bg-[#8AF1BB] justify-end items-center inline-flex" />
       </div>
 
-      <Container className="md:absolute md:pt-40 md:pb-0 py-16 inset-0">
+      <div className="md:absolute md:pt-40 md:pb-0 py-16 inset-0">
         <div className="flex flex-col md:flex-row w-full md:justify-between">
           <div
             className={`md:flex-col md:w-1/2 lg:h-[500px] ${
@@ -75,7 +75,7 @@ export const Benefits = () => {
             <Image src={lady} alt="nice lady" height={500} width={500} />
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

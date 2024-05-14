@@ -15,7 +15,7 @@ const FinPayPage = () => {
       <div
         className="bg-cover bg-center h-screen flex justify-start items-center"
         style={{
-          backgroundImage: `url('/assets/FIN Welcome Page Assets/Finpay image.jpg')`,
+          backgroundImage: `url(&apos;/assets/FIN Welcome Page Assets/Finpay image.jpg&apos;)`,
           color: "white",
           paddingLeft: "4rem",
           paddingBottom: "9rem",
@@ -152,7 +152,7 @@ const FinPayPage = () => {
           
             <span className="font-normal" style={{ fontSize: "1.2rem" }}>
               See what other documents we accept view our{" "}
-              <span className="underline font-bold">FAQ's</span>
+              <span className="underline font-bold">FAQ&apos;s</span>
             </span>
           </p>
           <br />
@@ -162,7 +162,7 @@ const FinPayPage = () => {
               <div className="w-20 h-20 flex justify-center items-center">
                 <img src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
               </div>
-              <p className="mt-4 text-center">Copy of <br />director's ID</p>
+              <p className="mt-4 text-center">Copy of <br />director&apos;s ID</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 flex justify-center items-center">

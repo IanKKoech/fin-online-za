@@ -14,6 +14,7 @@ import facial from "../../../public/assets/plasticSurgery.jpg";
 import dental from "../../../public/assets/Dental.jpg";
 import hearingImage from "../../../public/assets/HearingAid.jpg";
 import stethescopeImage from "../../../public/assets/Stethescope.jpg";
+import Link from "next/link";
 
 export const MedicalHome = () => {
   return (
@@ -22,7 +23,7 @@ export const MedicalHome = () => {
       <div
         className="bg-cover bg-center h-screen flex justify-start items-center"
         style={{
-          backgroundImage: `url('/assets/medicalLoansImage.jpg')`,
+          backgroundImage: `url(&apos;/assets/medicalLoansImage.jpg&apos;)`,
           color: "white",
           paddingLeft: "4rem",
           paddingBottom: "9rem",
@@ -36,7 +37,7 @@ export const MedicalHome = () => {
           <p className="pl-4 pr-0 lg:pr-4 text-lg sm:text-2xl text-teal">
             Welcome to{" "}
             <span style={{ fontWeight: "bold" }}>Fin Medical Loans</span>, South
-            Africa's niche Medical Financial
+            Africa&apos;s niche Medical Financial
             <br />
             Services Provider. We enable South Africans to obtain those medical{" "}
             <br />
@@ -80,10 +81,10 @@ export const MedicalHome = () => {
             </p>
             <br></br>
             <p className="text-black text-center text-pretty text-0xl font-light ">
-              South Africa's preferred Medical Finance Provider Whether it's a
+              South Africa&apos;s preferred Medical Finance Provider Whether it&apos;s a
               scan that saves your life or that cosmetic or dental surgery
-              you've <br></br> always wanted, Fin Medical Loans has a
-              Life-Changing loan that's right for you.
+              you&apos;ve <br></br> always wanted, Fin Medical Loans has a
+              Life-Changing loan that&apos;s right for you.
             </p>
             <br></br>
           </div>
@@ -91,7 +92,7 @@ export const MedicalHome = () => {
             <div className="relative bottom-0 left-0 bg-white px-6 sm:pl-80 sm:pr-80 align-middle">
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-2 md:gap-4 sm:justify-between mb-4">
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                  <a href="/medical-loans">
+                  <Link href="/medical-loans">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                       <img
                         className="w-full h-auto object-cover rounded-t-lg"
@@ -104,10 +105,10 @@ export const MedicalHome = () => {
                         Cosmetic Surgery
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                  <a href="/medical-loans">
+                  <Link href="/medical-loans">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                       <img
                         className="w-full h-auto object-cover rounded-t-lg"
@@ -120,10 +121,10 @@ export const MedicalHome = () => {
                         Dental Surgery
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                  <a href="/medical-loans">
+                  <Link href="/medical-loans">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                       <img
                         className="w-full h-auto object-cover rounded-t-lg"
@@ -136,10 +137,10 @@ export const MedicalHome = () => {
                         Hearing/Audiology
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                  <a href="/medical-loans">
+                  <Link href="/medical-loans">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                       <img
                         className="w-full h-auto object-cover rounded-t-lg"
@@ -152,7 +153,7 @@ export const MedicalHome = () => {
                         General Healthcare
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* End of carousel */}
@@ -198,7 +199,7 @@ export const MedicalHome = () => {
                 </p>
                 <div className="text-left ml-2">
                   <p>
-                    We'll get back to you within <br></br> a business hour
+                    We&apos;ll get back to you within <br></br> a business hour
                   </p>
                 </div>
               </div>
@@ -228,7 +229,7 @@ export const MedicalHome = () => {
             <br />
             <span className="text-2xl font-light">
               See what other documents we accept view our{" "}
-              <span className="underline font-bold">FAQ's</span>
+              <span className="underline font-bold">FAQ&apos;s</span>
             </span>
           </p>
           <br />
@@ -332,8 +333,8 @@ export const MedicalHome = () => {
               All our loans include{" "}
               <span className="font-bold">Credit Life Insurance,</span>{" "}
               safeguarding you against unforeseen insurable events that could
-              affect your ability to repay. Gain peace of mind knowing you're
-              protected. You'll receive courage for.
+              affect your ability to repay. Gain peace of mind knowing you&apos;re
+              protected. You&apos;ll receive courage for.
             </span>
           </p>
 
@@ -388,7 +389,7 @@ export const MedicalHome = () => {
           <br></br>
           <br></br>
           <p className="text-center align-middle text-3xl text-black font-light">
-            Still on the fence, here's what <br></br>{" "}
+            Still on the fence, here&apos;s what <br></br>{" "}
             <span className="text-green-400">our users</span> are saying
           </p>
           <Testimonials />
