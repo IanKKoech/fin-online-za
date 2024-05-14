@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import darkModeIcon from "../../public/assets/FIN Welcome Page Assets/dark-mode 1.png";
-import { Button } from "fin-ui";
+// import { Button } from "fin-ui";
 import logo from "../../public/assets/FIN Welcome Page Assets/Fin Logo (1).png";
 import Link from "next/link";
 
@@ -56,7 +56,7 @@ const Header = () => {
         <Link href="#" className="font-normal">
           Contact Us
         </Link>
-        <Button
+        <button
           className="bg-[white] text-[#31c231] border-[green] font-normal"
           style={{
             borderRadius: "2.5rem",
@@ -65,9 +65,9 @@ const Header = () => {
           }}
         >
           <Link href="/register">Register</Link>
-        </Button>
+        </button>
 
-        <Button
+        <button
           className="bg-[#a9f7a9] text-black font-normal"
           style={{
             borderRadius: "4.5rem",
@@ -76,7 +76,7 @@ const Header = () => {
           }}
         >
           <Link href="/login">Sign In</Link>
-        </Button>
+        </button>
         <button
           className="mr-4 text-sm"
           style={{ width: "38px", height: "30px" }}
@@ -130,13 +130,13 @@ const Header = () => {
           <Link href="#" className="block text-sm font-normal py-2">
             Contact Us
           </Link>
-          <Button className="bg-[white] text-[#4bc74b] border-[green] text-sm w-full mt-4 font-normal">
+          <button className="bg-[white] text-[#4bc74b] border-[green] text-sm w-full mt-4 font-normal">
             Register
-          </Button>
+          </button>
 
-          <Button className="bg-[#5ff35f] text-[#000000c4] text-sm w-full mt-2 font-normal">
+          <button className="bg-[#5ff35f] text-[#000000c4] text-sm w-full mt-2 font-normal">
             Sign In
-          </Button>
+          </button>
         </div>
       )}
     </header>
