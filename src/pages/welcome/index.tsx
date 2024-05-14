@@ -17,7 +17,6 @@ import FNB from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 13@4
 import Snap from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 14@4x-8.png";
 import payfast from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 15@4x-8.png";
 import ozow from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 16@4x-8.png";
-// import { Text } from "fin-ui";
 import Link from "next/link";
 
 const WelcomePage = () => {
