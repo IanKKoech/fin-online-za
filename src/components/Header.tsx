@@ -15,6 +15,10 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="font-poppins font-thin p-3 flex justify-between items-center bg-white text-[black]">
       <img src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" />
@@ -24,38 +28,53 @@ const Header = () => {
         className="hidden md:flex items-center space-x-4"
         style={{ fontFamily: "Poppins" }}
       >
-        <a href="#" className="font-normal">
-          Our Products
-        </a>
-        <a href="#" className="font-normal">
+        <div className="relative">
+          <a href="#" className="font-normal" onClick={toggleMenu}>
+            Our Products
+          </a>
+          {isMenuOpen && (
+            <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-lg py-2 px-4 mt-1">
+              <a href="/dental-finance" className="block py-1" onClick={closeMenu}>
+                Medical Loan
+              </a>
+              <a href="/flexi-loans" className="block py-1" onClick={closeMenu}>
+                Flexi Loan
+              </a>
+              <a href="/shopping-partners" className="block py-1" onClick={closeMenu}>
+                Online Loan
+              </a>
+            </div>
+          )}
+        </div>
+        <a href="/https://client.fin-connect.net/auth/signUp" className="font-normal">
           Join Fin Pay
         </a>
-        <a href="#" className="font-normal">
+        <a href="/https://client.fin-connect.net/auth/signIn" className="font-normal">
           Fin Pay Portal
         </a>
         <a href="#" className="font-normal">
           Contact Us
         </a>
         <Button
-          className="bg-[white] text-[#4bc74b] border-[green] font-normal"
+          className="bg-[white] text-[#31c231] border-[green] font-normal"
           style={{
-            borderRadius: "4.5rem",
+            borderRadius: "2.5rem",
             height: "2.5rem",
             width: "6rem",
           }}
         >
-          Register
+          <a href="/register">Register</a>
         </Button>
 
         <Button
-          className="bg-[#a2f8a2] text-blue-950 font-normal"
+          className="bg-[#a9f7a9] text-black font-normal"
           style={{
             borderRadius: "4.5rem",
             height: "2.5rem",
             width: "6rem",
           }}
         >
-          Sign In
+          <a href="/login">Sign In</a>
         </Button>
         <button
           className="mr-4 text-sm"
@@ -94,7 +113,11 @@ const Header = () => {
           className="md:hidden absolute top-16 right-0 bg-white bg-opacity-100 shadow-md rounded-lg py-4 px-2 mt-2"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
-          <a href="#" className="block text-sm font-normal py-2">
+          <a
+            href="#"
+            className="block text-sm font-normal py-2"
+            onClick={closeMenu}
+          >
             Our Products
           </a>
           <a href="#" className="block text-sm font-normal py-2">
@@ -110,12 +133,11 @@ const Header = () => {
             Register
           </Button>
 
-          <Button className="bg-[#4bc74b] text-[#000000c4] text-sm w-full mt-2 font-normal">
+          <Button className="bg-[#5ff35f] text-[#000000c4] text-sm w-full mt-2 font-normal">
             Sign In
           </Button>
         </div>
       )}
-      
     </header>
   );
 };

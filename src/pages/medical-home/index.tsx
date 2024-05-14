@@ -91,60 +91,68 @@ export const MedicalHome = () => {
             <div className="relative bottom-0 left-0 bg-white px-6 sm:pl-80 sm:pr-80 align-middle">
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-2 md:gap-4 sm:justify-between mb-4">
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                    <img
-                      className="w-full h-auto object-cover rounded-t-lg"
-                      src={facial.src}
-                      alt=""
-                    />
-                  </div>
-                  <div className="p-4">
-                    <p className="text-white text-lg font-semibold">
-                      Cosmetic Surgery
-                    </p>
-                  </div>
+                  <a href="/medical-loans">
+                    <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                      <img
+                        className="w-full h-auto object-cover rounded-t-lg"
+                        src={facial.src}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-4">
+                      <p className="text-white text-lg font-semibold">
+                        Cosmetic Surgery
+                      </p>
+                    </div>
+                  </a>
                 </div>
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                    <img
-                      className="w-full h-auto object-cover rounded-t-lg"
-                      src={dental.src}
-                      alt=""
-                    />
-                  </div>
-                  <div className="p-4">
-                    <p className="text-white text-lg font-semibold">
-                      Dental Surgery
-                    </p>
-                  </div>
+                  <a href="/medical-loans">
+                    <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                      <img
+                        className="w-full h-auto object-cover rounded-t-lg"
+                        src={dental.src}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-4">
+                      <p className="text-white text-lg font-semibold">
+                        Dental Surgery
+                      </p>
+                    </div>
+                  </a>
                 </div>
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                    <img
-                      className="w-full h-auto object-cover rounded-t-lg"
-                      src={hearingImage.src}
-                      alt=""
-                    />
-                  </div>
-                  <div className="p-4">
-                    <p className="text-white text-lg font-semibold">
-                      Hearing/Audiology
-                    </p>
-                  </div>
+                  <a href="/medical-loans">
+                    <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                      <img
+                        className="w-full h-auto object-cover rounded-t-lg"
+                        src={hearingImage.src}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-4">
+                      <p className="text-white text-lg font-semibold">
+                        Hearing/Audiology
+                      </p>
+                    </div>
+                  </a>
                 </div>
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                    <img
-                      className="w-full h-auto object-cover rounded-t-lg"
-                      src={stethescopeImage.src}
-                      alt=""
-                    />
-                  </div>
-                  <div className="p-4">
-                    <p className="text-white text-lg font-semibold">
-                      General Healthcare
-                    </p>
-                  </div>
+                  <a href="/medical-loans">
+                    <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
+                      <img
+                        className="w-full h-auto object-cover rounded-t-lg"
+                        src={stethescopeImage.src}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-4">
+                      <p className="text-white text-lg font-semibold">
+                        General Healthcare
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
               {/* End of carousel */}

@@ -38,7 +38,7 @@ export const FinShoppingPartner = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center bg-white pt-12 pb-12">
         <div className="relative flex">
           <input
             type="email"
@@ -272,3 +272,5 @@ export const FinShoppingPartner = () => {
     </div>
   );
 };
+
+export default FinShoppingPartner;

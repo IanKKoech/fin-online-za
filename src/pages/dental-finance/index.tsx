@@ -9,6 +9,7 @@ import tempDisability from "../../../public/assets/Layer_1.png";
 import permDisability from "../../../public/assets/Vector.png";
 import death from "../../../public/assets/Layer_1-2.png";
 import retrenchment from "../../../public/assets/Layer_1-1.png";
+import { CallToAction } from "@/components/callToAction";
 
 export const FinDentalLoans = () => {
   return (
@@ -48,7 +49,7 @@ export const FinDentalLoans = () => {
             borderTopRightRadius: "4.5rem",
           }}
         >
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center pt-12">
             <div className="flex items-center justify-center">
               <div className="relative flex">
                 <input
@@ -65,30 +66,58 @@ export const FinDentalLoans = () => {
             </div>
           </div>
 
-          <div className="bg-white">
-            <p className="text-black text-center align-middle text-3xl pt-5">
+          <div className="bg-white text-center">
+            <p className="text-black text-3xl pt-5">
               What can I cover with dental finance ?
             </p>
-            <br />
-            <br />
-            <div className="row">
-              <ul className="col">
-                <li>Teeth Whitening</li>
-                <li>Braces</li>
-                <li>Veneer Teeth</li>
+            <div className="flex justify-center mt-8 pb-12">
+              <ul className="mx-8 list-disc">
+                <li style={{ paddingLeft: "1.25rem" }}>Teeth Whitening</li>
+                <li style={{ paddingLeft: "1.25rem" }}>Braces</li>
+                <li style={{ paddingLeft: "1.25rem" }}>Veneer Teeth</li>
               </ul>
-              <ul className="col">
-                <li>Aligners</li>
-                <li>Porcelain & Composite Veneers</li>
-                <li>Porcelain Bridgework</li>
+              <ul className="mx-8 list-disc">
+                <li style={{ paddingLeft: "1.25rem" }}>Aligners</li>
+                <li style={{ paddingLeft: "1.25rem" }}>
+                  Porcelain & Composite Veneers
+                </li>
+                <li style={{ paddingLeft: "1.25rem" }}>Porcelain Bridgework</li>
               </ul>
-              <ul className="col">
-                <li>Dental Implants</li>
-                <li>Cosmetic Gum Surgery</li>
-                <li>And More...</li>
+              <ul className="mx-8 list-disc">
+                <li style={{ paddingLeft: "1.25rem" }}>Dental Implants</li>
+                <li style={{ paddingLeft: "1.25rem" }}>Cosmetic Gum Surgery</li>
+                <li style={{ paddingLeft: "1.25rem" }}>And More...</li>
               </ul>
             </div>
           </div>
+
+          {/* <div>
+            <CallToAction
+              organisation_product={{
+                application_workflow: null,
+                backoffice_product_ref: null,
+                capitalised_charges: false,
+                charge_config: null,
+                country: null,
+                created_at: null,
+                description: null,
+                fineract_prod_ref: null,
+                id: 0,
+                instalment_lookup: null,
+                interest_calculation_period_type: null,
+                interest_calculation_type: null,
+                interest_rate: null,
+                name: null,
+                organisation: 0,
+                partner_available: null,
+                payment_type_config: null,
+                product: 0,
+                quick_check_workflow: null,
+                source_account: null,
+              }}
+              product_charges={[]}
+            />
+          </div> */}
 
           <div className="bg-gray-200 pb-5">
             <p className="text-black text-center align-middle text-2xl sm:text-4xl pt-5 font-light">
