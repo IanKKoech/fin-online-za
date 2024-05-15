@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../public/assets/FIN Welcome Page Assets/Fin Logo (1).png";
+import logo from "../../../public/assets/FIN Welcome Page Assets/FinLogo.png";
 import ErrorImage from "../../../public/assets/6325254 1.png";
 import Link from "next/link";
 import Image from "next/image";

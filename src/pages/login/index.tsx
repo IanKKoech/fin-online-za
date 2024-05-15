@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import logo from "../../../public/assets/FIN Welcome Page Assets/Fin Logo (1).png";
+import logo from "../../../public/assets/FIN Welcome Page Assets/FinLogo.png";
 import loginImage from "../../../public/assets/6461498 1.png";
 import Image from "next/image";
 
