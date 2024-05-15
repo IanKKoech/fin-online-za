@@ -9,14 +9,7 @@ const Footer = () => {
       <div className="container flex flex-wrap justify-center text-md gap-6">
         <div className="flex flex-col items-center mx-4 mb-4 sm:mb-0">
           <div>
-            <Image
-              src={FinLogo.src}
-              alt=""
-              className="h-14 w-auto mb-2"
-              layout="fixed"
-              width={56}
-              height={14}
-            />
+            <img src={FinLogo.src} alt="" className="h-14 w-auto mb-2" />
           </div>
           <p className="font-semibold mb-1">Fin South Africa</p>
           <p className="text-center font-normal">
@@ -27,7 +20,8 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center mx-4 mb-4 sm:mb-0">
+        {/* Add 'justify-center' to center items horizontally */}
+        <div className="flex flex-col items-center justify-center mx-4 mb-4 sm:mb-0">
           <h2 className="font-medium mb-2">Company</h2>
           <p className="mb-1 font-extralight">About us</p>
           <p className="mb-1 font-extralight">Blog</p>
@@ -35,19 +29,22 @@ const Footer = () => {
           <p className="mb-1 font-extralight">Community</p>
         </div>
 
-        <div className="flex flex-col items-center mx-4 mb-4 sm:mb-0">
+        {/* Add 'justify-center' to center items horizontally */}
+        <div className="flex flex-col items-center justify-center mx-4 mb-4 sm:mb-0">
           <h2 className="font-normal mb-2">Join us</h2>
           <p className="mb-1 font-extralight">Merchants</p>
           <p className="mb-1 font-extralight">Partners</p>
         </div>
 
-        <div className="flex flex-col items-center mx-4 mb-4 sm:mb-0">
+        {/* Add 'justify-center' to center items horizontally */}
+        <div className="flex flex-col items-center justify-center mx-4 mb-4 sm:mb-0">
           <h2 className="font-normal mb-2">Help</h2>
           <p className="mb-1 font-extralight">Contact</p>
           <p className="mb-1 font-extralight">FAQs</p>
         </div>
 
-        <div className="flex flex-col items-center mx-4 mb-4 sm:mb-0">
+        {/* Add 'justify-center' to center items horizontally */}
+        <div className="flex flex-col items-center justify-center mx-4 mb-4 sm:mb-0">
           <h2 className="font-normal mb-2">Legal</h2>
           <p className="mb-1 font-extralight">Terms & Conditions</p>
           <p className="mb-1 font-extralight">Privacy Policy</p>
@@ -60,11 +57,7 @@ const Footer = () => {
             on Socials
           </h2>
           <div>
-            <img
-              src={socials.src}
-              alt=""
-              className="h-10 w-auto"
-            />
+            <img src={socials.src} alt="" className="h-10 w-auto" />
           </div>
         </div>
       </div>
