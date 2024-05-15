@@ -93,7 +93,7 @@ export const MedicalHome = () => {
             <div className="relative bottom-0 left-0 bg-white px-6 sm:pl-80 sm:pr-80 align-middle">
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-2 md:gap-4 sm:justify-between mb-4">
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                  <Link href="/medical-loans">
+                  <Link href="/dental-finance">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                       <Image   
                         className="w-full h-auto object-cover rounded-t-lg"
@@ -109,7 +109,7 @@ export const MedicalHome = () => {
                   </Link>
                 </div>
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
-                  <Link href="/medical-loans">
+                  <Link href="/dental-finance">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                       <Image   
                         className="w-full h-auto object-cover rounded-t-lg"
@@ -125,7 +125,7 @@ export const MedicalHome = () => {
                   </Link>
                 </div>
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                  <Link href="/medical-loans">
+                  <Link href="/dental-finance">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                       <Image   
                         className="w-full h-auto object-cover rounded-t-lg"
@@ -141,7 +141,7 @@ export const MedicalHome = () => {
                   </Link>
                 </div>
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
-                  <Link href="/medical-loans">
+                  <Link href="/dental-finance">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
                       <Image   
                         className="w-full h-auto object-cover rounded-t-lg"
