@@ -20,7 +20,7 @@ const Register = () => {
   return (
     <div className="font-poppins bg-white min-h-screen flex justify-center items-center text-black">
       <header className="absolute top-0 left-0 p-8">
-        <Link href='/welcome'><Image    src={logo.src} alt="Fin Logo" className="w-28 h-auto" /></Link>
+        <Link href='/welcome'><img src={logo.src} alt="Fin Logo" className="w-28 h-auto" /></Link>
       </header>
       <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row max-w-4xl w-full">
         <div className="md:w-1/2 md:pr-4">

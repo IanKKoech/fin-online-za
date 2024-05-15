@@ -40,7 +40,7 @@ export const FinFlexiLoans = () => {
         </div>
       </div>
       <br />
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
         <div className="flex items-center justify-center">
           <div className="relative flex">
             <input
@@ -167,8 +167,6 @@ export const FinFlexiLoans = () => {
             </div>
           </div>
         </div>
-
-        <Benefits />
 
         <div className="bg-white p-10 text-black bottom-0">
           <p className="text-black text-center align-middle text-3xl sm:text-4xl pt-2">
