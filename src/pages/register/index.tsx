@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import logo from "../../../public/assets/FIN Welcome Page Assets/Fin Logo (1).png";
 import regImage from "../../../public/assets/4351531 1.png";
+import Image from "next/image";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -18,7 +19,7 @@ const Register = () => {
   return (
     <div className="font-poppins bg-white min-h-screen flex justify-center items-center text-black">
       <header className="absolute top-0 left-0 p-8">
-        <img src={logo.src} alt="Fin Logo" className="w-28 h-auto" />
+        <Image src={logo.src} alt="Fin Logo" className="w-28 h-auto" />
       </header>
       <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row max-w-4xl w-full">
         <div className="md:w-1/2 md:pr-4">
@@ -107,7 +108,7 @@ const Register = () => {
         </div>
 
         <div className="md:w-1/2 md:pl-4 mt-4 md:mt-0 pt-20">
-          <img
+          <Image
             src={regImage.src}
             alt="Image"
             className="w-full h-auto md:w-200 md:h-auto rounded-lg"

@@ -8,6 +8,7 @@ import tempDisability from "../../../public/assets/Layer_1.png";
 import permDisability from "../../../public/assets/Vector.png";
 import death from "../../../public/assets/Layer_1-2.png";
 import retrenchment from "../../../public/assets/Layer_1-1.png";
+import Image from "next/image";
 
 export const FinShoppingPartner = () => {
   return (
@@ -124,13 +125,13 @@ export const FinShoppingPartner = () => {
         <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 flex justify-center items-center">
-              <img src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
+              <Image src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
             </div>
             <p className="mt-4 text-center">Copy of your ID</p>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 flex justify-center items-center">
-              <img
+              <Image
                 src={incomeProof.src}
                 alt="Proof of Income"
                 className="h-11 w-11"
@@ -140,7 +141,7 @@ export const FinShoppingPartner = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20  flex justify-center items-center">
-              <img
+              <Image
                 src={statement.src}
                 alt="3 Months statement"
                 className="h-11 w-11"
@@ -152,7 +153,7 @@ export const FinShoppingPartner = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20  flex justify-center items-center">
-              <img
+              <Image
                 src={residence.src}
                 alt="Residence Proof"
                 className="h-11 w-11"
@@ -230,7 +231,7 @@ export const FinShoppingPartner = () => {
         <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 flex justify-center items-center">
-              <img
+              <Image
                 src={tempDisability.src}
                 alt="Temporary Disability"
                 className="h-14 auto"
@@ -240,7 +241,7 @@ export const FinShoppingPartner = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 flex justify-center items-center">
-              <img
+              <Image
                 src={permDisability.src}
                 alt="Permanent Disability"
                 className="h-14 auto"
@@ -250,13 +251,13 @@ export const FinShoppingPartner = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20  flex justify-center items-center">
-              <img src={death.src} alt="Cofin icon" className="h-14 auto" />
+              <Image src={death.src} alt="Cofin icon" className="h-14 auto" />
             </div>
             <p className="mt-4 text-center">Death</p>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20  flex justify-center items-center">
-              <img
+              <Image
                 src={retrenchment.src}
                 alt="Retrenchment Image"
                 className="h-14 auto"

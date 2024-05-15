@@ -7,6 +7,7 @@ import wallet from "../../../public/assets/FIN Online Loans V1-3/Pocketbook.png"
 import bankConfirmation from "../../../public/assets/FIN Online Loans V1-3/Union.png";
 import address from "../../../public/assets/FIN Online Loans V1-3/Component.png";
 import food from "../../../public/assets/FIN Online Loans V1-3/Food.png";
+import Image from "next/image";
 
 const FinPayPage = () => {
   return (
@@ -134,14 +135,14 @@ const FinPayPage = () => {
         </div>
 
         <div className="bg-white flex justify-center items-center pt-10 relative">
-          <img className="w-20 h-auto mx-2" src={scanMe.src} alt="Image 1" />
+          <Image className="w-20 h-auto mx-2" src={scanMe.src} alt="Image 1" />
           <div className="relative">
-            <img
+            <Image
               src={food.src}
               className="w-32 h-auto mx-2 absolute top-0 left-0"
               style={{marginTop: "-24px"}}
             />
-            <img className="w-18 h-auto mx-2" src={api.src} alt="Image 2" />
+            <Image className="w-18 h-auto mx-2" src={api.src} alt="Image 2" />
           </div>
         </div>
        
@@ -160,13 +161,13 @@ const FinPayPage = () => {
           <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 flex justify-center items-center">
-                <img src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
+                <Image src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
               </div>
               <p className="mt-4 text-center">Copy of <br />director&apos;s ID</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 flex justify-center items-center">
-                <img
+                <Image
                   src={wallet.src}
                   alt="Proof of Income"
                   className="h-11 w-11"
@@ -176,7 +177,7 @@ const FinPayPage = () => {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20  flex justify-center items-center">
-                <img
+                <Image
                   src={bankConfirmation.src}
                   alt="3 Months statement"
                   className="h-11 w-11"
@@ -188,7 +189,7 @@ const FinPayPage = () => {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20  flex justify-center items-center">
-                <img
+                <Image
                   src={address.src}
                   alt="Residence Proof"
                   className="h-11 w-11"

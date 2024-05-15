@@ -15,6 +15,7 @@ import dental from "../../../public/assets/Dental.jpg";
 import hearingImage from "../../../public/assets/HearingAid.jpg";
 import stethescopeImage from "../../../public/assets/Stethescope.jpg";
 import Link from "next/link";
+import Image from "next/image";
 
 export const MedicalHome = () => {
   return (
@@ -94,7 +95,7 @@ export const MedicalHome = () => {
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
                   <Link href="/medical-loans">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                      <img
+                      <Image
                         className="w-full h-auto object-cover rounded-t-lg"
                         src={facial.src}
                         alt=""
@@ -110,7 +111,7 @@ export const MedicalHome = () => {
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
                   <Link href="/medical-loans">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                      <img
+                      <Image
                         className="w-full h-auto object-cover rounded-t-lg"
                         src={dental.src}
                         alt=""
@@ -126,7 +127,7 @@ export const MedicalHome = () => {
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
                   <Link href="/medical-loans">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                      <img
+                      <Image
                         className="w-full h-auto object-cover rounded-t-lg"
                         src={hearingImage.src}
                         alt=""
@@ -142,7 +143,7 @@ export const MedicalHome = () => {
                 <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
                   <Link href="/medical-loans">
                     <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                      <img
+                      <Image
                         className="w-full h-auto object-cover rounded-t-lg"
                         src={stethescopeImage.src}
                         alt=""
@@ -237,13 +238,13 @@ export const MedicalHome = () => {
           <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 flex justify-center items-center">
-                <img src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
+                <Image src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
               </div>
               <p className="mt-4 text-center">Copy of your ID</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 flex justify-center items-center">
-                <img
+                <Image
                   src={incomeProof.src}
                   alt="Proof of Income"
                   className="h-11 w-11"
@@ -253,7 +254,7 @@ export const MedicalHome = () => {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20  flex justify-center items-center">
-                <img
+                <Image
                   src={statement.src}
                   alt="3 Months statement"
                   className="h-11 w-11"
@@ -265,7 +266,7 @@ export const MedicalHome = () => {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20  flex justify-center items-center">
-                <img
+                <Image
                   src={residence.src}
                   alt="Residence Proof"
                   className="h-11 w-11"
@@ -343,7 +344,7 @@ export const MedicalHome = () => {
           <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 flex justify-center items-center">
-                <img
+                <Image
                   src={tempDisability.src}
                   alt="Temporary Disability"
                   className="h-14 auto"
@@ -353,7 +354,7 @@ export const MedicalHome = () => {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 flex justify-center items-center">
-                <img
+                <Image
                   src={permDisability.src}
                   alt="Permanent Disability"
                   className="h-14 auto"
@@ -363,13 +364,13 @@ export const MedicalHome = () => {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20  flex justify-center items-center">
-                <img src={death.src} alt="Cofin icon" className="h-14 auto" />
+                <Image src={death.src} alt="Cofin icon" className="h-14 auto" />
               </div>
               <p className="mt-4 text-center">Death</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20  flex justify-center items-center">
-                <img
+                <Image
                   src={retrenchment.src}
                   alt="Retrenchment Image"
                   className="h-14 auto"

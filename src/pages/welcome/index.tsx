@@ -18,6 +18,7 @@ import Snap from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 14@
 import payfast from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 15@4x-8.png";
 import ozow from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 16@4x-8.png";
 import Link from "next/link";
+import Image from "next/image";
 
 const WelcomePage = () => {
   return (
@@ -96,7 +97,7 @@ const WelcomePage = () => {
               <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
                 <Link href="/flexi-loans">
                   <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                    <img
+                    <Image
                       className="w-full h-auto object-cover rounded-t-lg"
                       src={flexi.src}
                       alt=""
@@ -112,7 +113,7 @@ const WelcomePage = () => {
               <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 dark:bg-surface-dark dark:text-white mb-4 sm:mb-0">
                 <Link href="/flexi-loans">
                   <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                    <img
+                    <Image
                       className="w-full h-auto object-cover rounded-t-lg"
                       src={personalLoans.src}
                       alt=""
@@ -128,7 +129,7 @@ const WelcomePage = () => {
               <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
                 <Link href="/medical-home">
                   <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                    <img
+                    <Image
                       className="w-full h-auto object-cover rounded-t-lg"
                       src={medicalLoans.src}
                       alt=""
@@ -144,7 +145,7 @@ const WelcomePage = () => {
               <div className="block w-full sm:w-auto md:w-[25rem] rounded-lg bg-blue-950 text-white shadow-secondary-1 mb-4 sm:mb-0">
                 <Link href="/shopping-partners">
                   <div className="relative overflow-hidden bg-cover bg-no-repeat h-36">
-                    <img
+                    <Image
                       className="w-full h-auto object-cover rounded-t-lg"
                       src={homeImprovement.src}
                       alt=""
@@ -174,7 +175,7 @@ const WelcomePage = () => {
         <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
-              <img src={pocketBook.src} alt="Icon 1" className="h-11 w-11" />
+              <Image src={pocketBook.src} alt="Icon 1" className="h-11 w-11" />
             </div>
             <p className="mt-4 text-center">
               Pay your <br /> account
@@ -182,7 +183,7 @@ const WelcomePage = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
-              <img src={union.src} alt="Icon 2" className="h-11 w-11" />
+              <Image src={union.src} alt="Icon 2" className="h-11 w-11" />
             </div>
             <p className="mt-4 text-center">
               Check payment <br /> options
@@ -190,7 +191,7 @@ const WelcomePage = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
-              <img src={union1.src} alt="Icon 3" className="h-11 w-11" />
+              <Image src={union1.src} alt="Icon 3" className="h-11 w-11" />
             </div>
             <p className="mt-4 text-center">
               Quick Access <br /> Finance
@@ -198,7 +199,7 @@ const WelcomePage = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 bg-green-300 rounded-full flex justify-center items-center">
-              <img src={union2.src} alt="Icon 4" className="h-11 w-11" />
+              <Image src={union2.src} alt="Icon 4" className="h-11 w-11" />
             </div>
             <p className="mt-4 text-center">
               Online <br /> Statements
@@ -223,7 +224,7 @@ const WelcomePage = () => {
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-16">
           <div className="flex flex-col items-center mb-8 md:mb-0">
             <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-start items-center">
-              <img src={applyOnline.src} alt="Icon 1" className="h-20 w-18" />
+              <Image src={applyOnline.src} alt="Icon 1" className="h-20 w-18" />
             </div>
             <p className="mt-2 text-gray-600 text-sm md:text-base">
               Apply Online
@@ -231,7 +232,7 @@ const WelcomePage = () => {
           </div>
           <div className="flex flex-col items-center mb-8 md:mb-0">
             <div className="w-8 h-16 md:w-12 md:h-24 rounded-full flex justify-start items-center">
-              <img
+              <Image
                 src={arrow1.src}
                 alt="Icon 2"
                 className="h-full w-auto sm:h-6 sm:w-8"
@@ -240,7 +241,7 @@ const WelcomePage = () => {
           </div>
           <div className="flex flex-col items-center mb-8 md:mb-0">
             <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-start items-center">
-              <img src={icon11.src} alt="Icon 3" className="h-20 w-18" />
+              <Image src={icon11.src} alt="Icon 3" className="h-20 w-18" />
             </div>
             <p className="mt-2 text-gray-600 text-sm md:text-base">
               Manage your <br /> account
@@ -248,7 +249,7 @@ const WelcomePage = () => {
           </div>
           <div className="flex flex-col items-center mb-8 md:mb-0">
             <div className="w-8 h-16 md:w-12 md:h-24 rounded-full flex justify-start items-center">
-              <img
+              <Image
                 src={arrow1.src}
                 alt="Icon 3"
                 className="h-full w-full sm:h-6 sm:w-8"
@@ -257,7 +258,7 @@ const WelcomePage = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-16 h-16 md:w-24 md:h-24 rounded-full flex justify-start items-center">
-              <img src={icon1.src} alt="Icon 4" className="h-20 w-18" />
+              <Image src={icon1.src} alt="Icon 4" className="h-20 w-18" />
             </div>
             <p className="mt-2 text-gray-600 text-sm md:text-base">
               Make easy <br /> repayments
@@ -283,25 +284,25 @@ const WelcomePage = () => {
         <div className="flex items-center justify-center flex-wrap gap-8 md:gap-24">
           <div className="ml-2 md:ml-5 mb-4 md:mb-0 relative">
             <Link href="https://www.fnb.co.za/">
-              <img src={FNB.src} alt="FNB" className="h-16 w-auto" />
+              <Image src={FNB.src} alt="FNB" className="h-16 w-auto" />
             </Link>
           </div>
           <div className="border-r border-black h-14 my-2 md:my-0"></div>
           <div className="mr-2 md:mr-5 mb-4 md:mb-0 relative">
             <Link href="https://www.snapscan.co.za/">
-              <img src={Snap.src} alt="Snap" className="h-14 w-auto" />
+              <Image src={Snap.src} alt="Snap" className="h-14 w-auto" />
             </Link>
           </div>
           <div className="border-r border-black h-14 my-2 md:my-0"></div>
           <div className="ml-2 md:ml-5 mb-4 md:mb-0 relative">
             <Link href="https://my.payfast.io/">
-              <img src={payfast.src} alt="PayFast" className="h-14 w-auto" />
+              <Image src={payfast.src} alt="PayFast" className="h-14 w-auto" />
             </Link>
           </div>
           <div className="border-r border-black h-14 my-2 md:my-0"></div>
           <div className="mr-2 md:mr-5 mb-4 md:mb-0 relative">
             <Link href="https://ozow.com/">
-              <img src={ozow.src} alt="Ozow" className="h-14 w-auto" />
+              <Image src={ozow.src} alt="Ozow" className="h-14 w-auto" />
             </Link>
           </div>
         </div>

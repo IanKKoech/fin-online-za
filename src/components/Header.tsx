@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import darkModeIcon from "../../public/assets/FIN Welcome Page Assets/dark-mode 1.png";
 import logo from "../../public/assets/FIN Welcome Page Assets/Fin Logo (1).png";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
 
   return (
     <header className="font-poppins font-thin p-3 flex justify-between items-center bg-white text-[black]">
-      <img src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" />
+      <Image src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" />
 
       {/* Navigation Menu */}
       <nav
@@ -81,7 +82,7 @@ const Header = () => {
           style={{ width: "38px", height: "30px" }}
           onClick={toggleDarkMode}
         >
-          <img
+          <Image
             src={darkModeIcon.src}
             alt="Dark/Light Mode"
             className="w-2/3 h-2/3"
