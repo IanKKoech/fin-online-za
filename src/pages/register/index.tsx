@@ -109,7 +109,7 @@ const Register = () => {
         </div>
 
         <div className="md:w-1/2 md:pl-4 mt-4 md:mt-0 pt-20">
-          <Image   
+          <img   
             src={regImage.src}
             alt="Image"
             className="w-full h-auto md:w-200 md:h-auto rounded-lg"
