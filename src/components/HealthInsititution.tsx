@@ -5,7 +5,7 @@ import mediConnectImage from "../../public/assets/Mediconnect1.png";
 import advanceImage from "../../public/assets/Advance 1.png";
 import krstlImage from "../../public/assets/Krstl 1.png";
 import fertilitySolutionsImage from "../../public/assets/Fertility Solutions 1.png";
-import Image from "next/image";
+// import Image from "next/image";
 
 const HealthInstitutions = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -33,27 +33,27 @@ const HealthInstitutions = () => {
         className="carousel-container"
       >
         <div className="h-auto w-80 pt-10">
-          <Image   
+          <img
             src={mediConnectImage.src}
             alt="MediConnect Logo"
             className="carousel-image"
           />
         </div>
         <div className="h-auto w-80 pt-16">
-          <Image   
+          <img
             src={advanceImage.src}
             alt="Advance"
             className="carousel-image"
           />
         </div>
         <div className="h-auto w-80 pt-10">
-          <Image    src={krstlImage.src} alt="Krystal" className="carousel-image" />
+          <img src={krstlImage.src} alt="Krystal" className="carousel-image" />
         </div>
         <div className="h-auto w-80">
-          <Image   
+          <img
             src={fertilitySolutionsImage.src}
             alt="Fertility Solutions"
-            className="carousel-image fertility-image h-4 w-auto" 
+            className="carousel-image fertility-image h-4 w-auto"
           />
         </div>
       </Carousel>

@@ -19,10 +19,12 @@ const Login = () => {
 
   return (
     <div className="font-poppins bg-white min-h-screen flex justify-center items-center text-black">
-      <header className="absolute top-0 left-0 p-8">
-        <Link href="/welcome"><Image    src={logo.src} alt="Fin Logo" className="w-28 h-auto" /></Link>
+      <header className="absolute top-0 left-10 p-8">
+        <Link href="/welcome">
+          <img src={logo.src} alt="Fin Logo" className="w-28 h-auto ml-64" />
+        </Link>
       </header>
-      <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row max-w-4xl w-full">
+      <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row max-w-4xl left-40 w-full">
         <div className="md:w-1/2 md:pr-4">
           <h2 className="text-2xl font-normal mb-2 text-black">Welcome !</h2>
           <h1 className="text-black text-3xl font-semibold mb-5">Sign In</h1>
@@ -76,13 +78,15 @@ const Login = () => {
           <div className="justify-center align-middle text-black font-thin pl-12 text-sm">
             <p>
               Don&apos;t have an Account ?{" "}
-              <Link href="/register"><span className="font-semibold">Register</span></Link>
+              <Link href="/register">
+                <span className="font-semibold">Register</span>
+              </Link>
             </p>
           </div>
         </div>
 
         <div className="md:w-1/2 md:pl-4 mt-4 md:mt-0 pt-20">
-          <Image   
+          <img
             src={loginImage.src}
             alt="Image"
             className="w-full h-auto md:w-120 md:h-120 rounded-lg"

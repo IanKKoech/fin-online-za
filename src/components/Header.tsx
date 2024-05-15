@@ -23,12 +23,14 @@ const Header = () => {
   return (
     <header className="font-poppins font-thin p-3 flex justify-between items-center bg-white text-[black]">
       <div>
-        <Link href="/welcome"><Image src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" /></Link>
+        <Link href="/welcome">
+          <img src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" />
+        </Link>
       </div>
 
       {/* Navigation Menu */}
       <nav
-        className="hidden md:flex items-center space-x-4"
+        className="hidden md:flex items-center space-x-4 space-y-6"
         style={{ fontFamily: "Poppins" }}
       >
         <div className="relative">
@@ -61,55 +63,61 @@ const Header = () => {
             </div>
           )}
         </div>
-        <Link
-          href="/register"
-          className="font-normal"
-        >
-          Join Fin Pay
-        </Link>
-        <Link
-          href="/login"
-          className="font-normal"
-        >
-          Fin Pay Portal
-        </Link>
-        <Link href="#" className="font-normal">
-          Contact Us
-        </Link>
-        <button
-          className="bg-[white] text-[#31c231] border-[green] font-normal"
-          style={{
-            borderRadius: "2.5rem",
-            height: "2.5rem",
-            width: "6rem",
-          }}
-        >
-          <Link href="/register">Register</Link>
-        </button>
+        <div className="relative">
+          <Link href="/register" className="font-normal">
+            Join Fin Pay
+          </Link>
+        </div>
+        <div className="relative">
+          <Link href="/login" className="font-normal">
+            Fin Pay Portal
+          </Link>
+        </div>
+        <div className="relative">
+          <Link href="#" className="font-normal">
+            Contact Us
+          </Link>
+        </div>
+        <div className="relative">
+          <button
+            className="bg-[white] text-[#31c231] border border-[green] font-normal"
+            style={{
+              borderRadius: "2.5rem",
+              height: "2.5rem",
+              width: "6rem",
+            }}
+          >
+            <Link href="/register">Register</Link>
+          </button>
+        </div>
 
-        <button
-          className="bg-[#a9f7a9] text-black font-normal"
-          style={{
-            borderRadius: "4.5rem",
-            height: "2.5rem",
-            width: "6rem",
-          }}
-        >
-          <Link href="/login">Sign In</Link>
-        </button>
-        <button
-          className="mr-4 text-sm"
-          style={{ width: "38px", height: "30px" }}
-          onClick={toggleDarkMode}
-        >
-          <div>
-            <Image
-              src={darkModeIcon.src}
-              alt="Dark/Light Mode"
-              className="w-2/3 h-2/3"
-            />
-          </div>
-        </button>
+        <div className="relative">
+          <button
+            className="bg-[#a9f7a9] text-black font-normal"
+            style={{
+              borderRadius: "4.5rem",
+              height: "2.5rem",
+              width: "6rem",
+            }}
+          >
+            <Link href="/login">Sign In</Link>
+          </button>
+        </div>
+        <div className="relative">
+          <button
+            className="mr-4 text-sm"
+            style={{ width: "38px", height: "30px" }}
+            onClick={toggleDarkMode}
+          >
+            <div>
+              <img
+                src={darkModeIcon.src}
+                alt="Dark/Light Mode"
+                className="w-2/3 h-2/3"
+              />
+            </div>
+          </button>
+        </div>
       </nav>
 
       {/* Hamburger Icon for Mobile */}
@@ -152,7 +160,7 @@ const Header = () => {
           <Link href="#" className="block text-sm font-normal py-2">
             Contact Us
           </Link>
-          <button className="bg-[white] text-[#4bc74b] border-[green] text-sm w-full mt-4 font-normal">
+          <button className="bg-[white] text-[#4bc74b] border border-[green] text-sm w-full mt-4 font-normal">
             Register
           </button>
 

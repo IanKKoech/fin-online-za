@@ -135,23 +135,22 @@ const FinPayPage = () => {
         </div>
 
         <div className="bg-white flex justify-center items-center pt-10 relative">
-          <Image    className="w-20 h-auto mx-2" src={scanMe.src} alt="Image 1" />
+          <img className="w-20 h-auto mx-2" src={scanMe.src} alt="Image 1" />
           <div className="relative">
-            <Image   
+            <img
               src={food.src}
               className="w-32 h-auto mx-2 absolute top-0 left-0"
               alt=""
-              style={{marginTop: "-24px"}}
+              style={{ marginTop: "-24px" }}
             />
-            <Image    className="w-18 h-auto mx-2" src={api.src} alt="Image 2" />
+            <img className="w-18 h-auto mx-2" src={api.src} alt="Image 2" />
           </div>
         </div>
-       
+
         <div className="bg-white p-10 text-black bottom-0 pb-60">
           <p className="text-black text-center align-middle text-3xl sm:text-4xl pt-2">
             What do you need ?
             <br />
-          
             <span className="font-normal" style={{ fontSize: "1.2rem" }}>
               See what other documents we accept view our{" "}
               <span className="underline font-bold">FAQ&apos;s</span>
@@ -162,23 +161,28 @@ const FinPayPage = () => {
           <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 flex justify-center items-center">
-                <Image    src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
+                <img src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
               </div>
-              <p className="mt-4 text-center">Copy of <br />director&apos;s ID</p>
+              <p className="mt-4 text-center">
+                Copy of <br />
+                director&apos;s ID
+              </p>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20 flex justify-center items-center">
-                <Image   
+                <img
                   src={wallet.src}
                   alt="Proof of Income"
                   className="h-11 w-11"
                 />
               </div>
-              <p className="mt-4 text-center">CICP <br /> COR 39</p>
+              <p className="mt-4 text-center">
+                CICP <br /> COR 39
+              </p>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20  flex justify-center items-center">
-                <Image   
+                <img
                   src={bankConfirmation.src}
                   alt="3 Months statement"
                   className="h-11 w-11"
@@ -190,7 +194,7 @@ const FinPayPage = () => {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-20 h-20  flex justify-center items-center">
-                <Image   
+                <img
                   src={address.src}
                   alt="Residence Proof"
                   className="h-11 w-11"
@@ -202,7 +206,6 @@ const FinPayPage = () => {
             </div>
           </div>
         </div>
-        
       </div>
 
       <Footer />
