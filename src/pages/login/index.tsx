@@ -3,6 +3,7 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 import logo from "../../../public/assets/FIN Welcome Page Assets/FinLogo.png";
 import loginImage from "../../../public/assets/6461498 1.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
