@@ -333,8 +333,8 @@ export const MedicalHome = () => {
             All our loans include {"  "}
             <span className="font-bold"> Credit Life Insurance, </span>{"  "}
             safeguarding you against unforeseen insurable events that could
-            affect your ability to repay. Gain peace of mind knowing you're
-            protected. You'll receive courage for.
+            affect your ability to repay. Gain peace of mind knowing you&lsquo;re
+            protected. You&lsquo;ll receive courage for.
           </p>
 
           <br />
