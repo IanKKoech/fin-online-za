@@ -47,7 +47,7 @@ const Footer = () => {
           <p className="mb-1 font-extralight">PAIA Manual</p>
         </div>
 
-        <div className="flex flex-col items-center mx-4 mb-4 sm:mb-0">
+        <div className="flex flex-col items-center mx-4 mb-4 sm:mb-0 ml-auto"> {/* Use ml-auto to move it to the right */}
           <h2 className="font-extralight mb-2 text-4xl">
             Follow Us <br />
             on Socials
