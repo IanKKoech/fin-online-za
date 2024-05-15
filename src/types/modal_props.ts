@@ -1,5 +1,5 @@
 export interface ModalProps {
-    component?: React.FC<any>;
+    component?: React.FC<Linkny>;
     props?: { [key: string]: unknown };
     isVisible?: boolean;
     closable?: boolean;
@@ -12,8 +12,8 @@ export interface ModalProps {
     fullScreen?: boolean;
     closeIcon?: boolean;
     headingClassName?: boolean;
-    headingComponent?: React.FC<any>;
-    bottomSheetFooter?: React.FC<any>;
+    headingComponent?: React.FC<Linkny>;
+    bottomSheetFooter?: React.FC<Linkny>;
     bottomSheetClassName?: string;
     modalFooter?: JSX.Element[];
     closeable?: boolean;

@@ -14,7 +14,7 @@ declare module "AppTypes" {
     maxFormHeight?: number;
     maxFormWidth?: number;
     hasInstalmentCalc?: boolean;
-    validationSchema?: Yup.ObjectSchema<any>;
+    validationSchema?: Yup.ObjectSchema<Linkny>;
     stepTriggers?: StepTrigger[];
   }
 

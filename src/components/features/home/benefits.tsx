@@ -66,7 +66,7 @@ export const Benefits = () => {
                 <div className="text-white text-xl lg:text-2xl font-black">
                   Learn More
                 </div>
-                <AiOutlineArrowRight className="text-white" />
+                <LinkiOutlineArrowRight className="text-white" />
               </div>
             </div>
           </div>

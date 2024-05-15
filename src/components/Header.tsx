@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className="font-poppins font-thin p-3 flex justify-between items-center bg-white text-[black]">
       <div>
-        <a href="/welcome"><Image src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" /></a>
+        <Link href="/welcome"><Image src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" /></Link>
       </div>
 
       {/* Navigation Menu */}

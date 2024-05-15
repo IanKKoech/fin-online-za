@@ -102,7 +102,7 @@ const Register = () => {
           <div className="justify-center align-middle text-black font-thin pl-12">
             <p>
               Already have an Account ?{" "}
-              <a href="/login"><span className="font-semibold">Sign In</span></a>
+              <Link href="/login"><span className="font-semibold">Sign In</span></Link>
             </p>
           </div>
         </div>
