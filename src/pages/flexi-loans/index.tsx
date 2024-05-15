@@ -40,7 +40,7 @@ export const FinFlexiLoans = () => {
         </div>
       </div>
       <br />
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center bg-white">
         <div className="flex items-center justify-center">
           <div className="relative flex">
             <input
