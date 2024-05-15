@@ -62,13 +62,13 @@ const Header = () => {
           )}
         </div>
         <Link
-          href="/https://client.fin-connect.net/auth/signUp"
+          href="/register"
           className="font-normal"
         >
           Join Fin Pay
         </Link>
         <Link
-          href="/https://client.fin-connect.net/auth/signIn"
+          href="/login"
           className="font-normal"
         >
           Fin Pay Portal
