@@ -140,6 +140,7 @@ const FinPayPage = () => {
             <Image
               src={food.src}
               className="w-32 h-auto mx-2 absolute top-0 left-0"
+              alt=""
               style={{marginTop: "-24px"}}
             />
             <Image className="w-18 h-auto mx-2" src={api.src} alt="Image 2" />
