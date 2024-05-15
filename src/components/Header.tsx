@@ -22,7 +22,9 @@ const Header = () => {
 
   return (
     <header className="font-poppins font-thin p-3 flex justify-between items-center bg-white text-[black]">
-      <Image src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" />
+      <div>
+        <Image src={logo.src} alt="Fin Logo" className="w-24 h-auto ml-8" />
+      </div>
 
       {/* Navigation Menu */}
       <nav
@@ -35,22 +37,40 @@ const Header = () => {
           </Link>
           {isMenuOpen && (
             <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-lg py-2 px-4 mt-1">
-              <Link href="/dental-finance" className="block py-1" onClick={closeMenu}>
+              <Link
+                href="/dental-finance"
+                className="block py-1"
+                onClick={closeMenu}
+              >
                 Medical Loan
               </Link>
-              <Link href="/flexi-loans" className="block py-1" onClick={closeMenu}>
+              <Link
+                href="/flexi-loans"
+                className="block py-1"
+                onClick={closeMenu}
+              >
                 Flexi Loan
               </Link>
-              <Link href="/shopping-partners" className="block py-1" onClick={closeMenu}>
+              <Link
+                href="/shopping-partners"
+                className="block py-1"
+                onClick={closeMenu}
+              >
                 Online Loan
               </Link>
             </div>
           )}
         </div>
-        <Link href="/https://client.fin-connect.net/auth/signUp" className="font-normal">
+        <Link
+          href="/https://client.fin-connect.net/auth/signUp"
+          className="font-normal"
+        >
           Join Fin Pay
         </Link>
-        <Link href="/https://client.fin-connect.net/auth/signIn" className="font-normal">
+        <Link
+          href="/https://client.fin-connect.net/auth/signIn"
+          className="font-normal"
+        >
           Fin Pay Portal
         </Link>
         <Link href="#" className="font-normal">
@@ -82,11 +102,13 @@ const Header = () => {
           style={{ width: "38px", height: "30px" }}
           onClick={toggleDarkMode}
         >
-          <Image
-            src={darkModeIcon.src}
-            alt="Dark/Light Mode"
-            className="w-2/3 h-2/3"
-          />
+          <div>
+            <Image
+              src={darkModeIcon.src}
+              alt="Dark/Light Mode"
+              className="w-2/3 h-2/3"
+            />
+          </div>
         </button>
       </nav>
 

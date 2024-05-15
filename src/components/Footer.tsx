@@ -8,7 +8,16 @@ const Footer = () => {
     <footer className="bg-black text-white py-4 pt-10">
       <div className="container flex flex-wrap justify-center text-md gap-6">
         <div className="flex flex-col items-center mx-4 mb-4 sm:mb-0">
-          <Image src={FinLogo.src} alt="" className="h-14 w-auto mb-2" />
+          <div>
+            <Image
+              src={FinLogo.src}
+              alt=""
+              className="h-14 w-auto mb-2"
+              layout="fixed"
+              width={56}
+              height={14}
+            />
+          </div>
           <p className="font-semibold mb-1">Fin South Africa</p>
           <p className="text-center font-normal">
             is a registered Credit Provider{" "}
@@ -51,7 +60,14 @@ const Footer = () => {
             on Socials
           </h2>
           <div>
-            <Image src={socials.src} alt="" className="h-10 w-auto" />
+            <Image
+              src={socials.src}
+              alt=""
+              className="h-10 w-auto"
+              layout="fixed"
+              width={40} 
+              height={10}
+            />
           </div>
         </div>
       </div>

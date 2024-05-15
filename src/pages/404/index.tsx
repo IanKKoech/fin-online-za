@@ -8,11 +8,11 @@ const ErrorPage = () => {
   return (
     <div className="font-poppins bg-white min-h-screen flex flex-col justify-center items-center text-black">
       <header className="absolute top-0 left-0 p-8">
-        <Image src={logo.src} alt="Fin Logo" className="w-28 h-auto" />
+        <Image    src={logo.src} alt="Fin Logo" className="w-28 h-auto" />
       </header>
       <div className="flex flex-col justify-center items-center h-screen">
         <div>
-          <Image src={ErrorImage.src} alt="Error" />
+          <Image    src={ErrorImage.src} alt="Error" />
         </div>
         <div className="mt-8">
           <button className="bg-green-300 text-white py-2 px-4 rounded-md mr-4 hover:bg-white hover:text-green-300 border-gray-200 hover:border hover:border-green-400">

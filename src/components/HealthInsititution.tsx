@@ -33,24 +33,24 @@ const HealthInstitutions = () => {
         className="carousel-container"
       >
         <div className="h-auto w-80 pt-10">
-          <Image
+          <Image   
             src={mediConnectImage.src}
             alt="MediConnect Logo"
             className="carousel-image"
           />
         </div>
         <div className="h-auto w-80 pt-16">
-          <Image
+          <Image   
             src={advanceImage.src}
             alt="Advance"
             className="carousel-image"
           />
         </div>
         <div className="h-auto w-80 pt-10">
-          <Image src={krstlImage.src} alt="Krystal" className="carousel-image" />
+          <Image    src={krstlImage.src} alt="Krystal" className="carousel-image" />
         </div>
         <div className="h-auto w-80">
-          <Image
+          <Image   
             src={fertilitySolutionsImage.src}
             alt="Fertility Solutions"
             className="carousel-image fertility-image h-4 w-auto" 

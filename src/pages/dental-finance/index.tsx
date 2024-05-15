@@ -191,13 +191,13 @@ export const FinDentalLoans = () => {
             <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20 flex justify-center items-center">
-                  <Image src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
+                  <Image    src={idCopy.src} alt="ID Copy" className="h-11 w-11" />
                 </div>
                 <p className="mt-4 text-center">Copy of your ID</p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20 flex justify-center items-center">
-                  <Image
+                  <Image   
                     src={incomeProof.src}
                     alt="Proof of Income"
                     className="h-11 w-11"
@@ -207,7 +207,7 @@ export const FinDentalLoans = () => {
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20  flex justify-center items-center">
-                  <Image
+                  <Image   
                     src={statement.src}
                     alt="3 Months statement"
                     className="h-11 w-11"
@@ -219,7 +219,7 @@ export const FinDentalLoans = () => {
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20  flex justify-center items-center">
-                  <Image
+                  <Image   
                     src={residence.src}
                     alt="Residence Proof"
                     className="h-11 w-11"
@@ -297,7 +297,7 @@ export const FinDentalLoans = () => {
             <div className="flex flex-col gap-10 font-poppins sm:flex-row sm:justify-center sm:gap-32">
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20 flex justify-center items-center">
-                  <Image
+                  <Image   
                     src={tempDisability.src}
                     alt="Temporary Disability"
                     className="h-14 auto"
@@ -307,7 +307,7 @@ export const FinDentalLoans = () => {
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20 flex justify-center items-center">
-                  <Image
+                  <Image   
                     src={permDisability.src}
                     alt="Permanent Disability"
                     className="h-14 auto"
@@ -317,13 +317,13 @@ export const FinDentalLoans = () => {
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20  flex justify-center items-center">
-                  <Image src={death.src} alt="Cofin icon" className="h-14 auto" />
+                  <Image    src={death.src} alt="Cofin icon" className="h-14 auto" />
                 </div>
                 <p className="mt-4 text-center">Death</p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20  flex justify-center items-center">
-                  <Image
+                  <Image   
                     src={retrenchment.src}
                     alt="Retrenchment Image"
                     className="h-14 auto"
