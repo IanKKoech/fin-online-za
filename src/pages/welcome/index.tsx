@@ -28,7 +28,7 @@ const WelcomePage = () => {
         <div
           className="bg-cover bg-center h-screen flex justify-start items-center"
           style={{
-            backgroundImage: `url(&apos;/assets/FIN Welcome Page Assets/Header Image/pexels-monstera-production-5996857 1.png&apos;)`,
+            backgroundImage: `url('/assets/FIN Welcome Page Assets/Header Image/pexels-monstera-production-5996857 1.png')`,
             color: "white",
             paddingLeft: "4rem",
             paddingBottom: "9rem",

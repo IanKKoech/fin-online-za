@@ -19,7 +19,7 @@ export const FinFlexiLoans = () => {
       <div
         className="bg-cover bg-center h-screen flex justify-start items-center"
         style={{
-          backgroundImage: `url(&apos;/assets/FIN Welcome Page Assets/Flexi-Loan-header.jpg&apos;)`,
+          backgroundImage: `url('/assets/FIN Welcome Page Assets/Flexi-Loan-header.jpg')`,
           color: "white",
           paddingLeft: "4rem",
           paddingBottom: "9rem",

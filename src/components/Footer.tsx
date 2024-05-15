@@ -60,13 +60,10 @@ const Footer = () => {
             on Socials
           </h2>
           <div>
-            <Image
+            <img
               src={socials.src}
               alt=""
               className="h-10 w-auto"
-              layout="fixed"
-              width={40} 
-              height={10}
             />
           </div>
         </div>

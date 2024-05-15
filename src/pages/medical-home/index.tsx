@@ -24,7 +24,7 @@ export const MedicalHome = () => {
       <div
         className="bg-cover bg-center h-screen flex justify-start items-center"
         style={{
-          backgroundImage: `url(&apos;/assets/medicalLoansImage.jpg&apos;)`,
+          backgroundImage: `url('/assets/medicalLoansImage.jpg')`,
           color: "white",
           paddingLeft: "4rem",
           paddingBottom: "9rem",

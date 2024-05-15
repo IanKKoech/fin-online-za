@@ -8,7 +8,7 @@ export const AboutUs = () => {
       <div
         className="bg-cover bg-center h-screen flex justify-start items-center"
         style={{
-          backgroundImage: `url(&apos;/assets/FIN Online Loans V1-3/About-us-image.jpg&apos;)`,
+          backgroundImage: `url('assets/FIN Online Loans V1-3/About-us-image.jpg')`,
           color: "white",
           paddingLeft: "4rem",
           paddingBottom: "9rem",
