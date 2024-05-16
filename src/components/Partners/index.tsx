@@ -1,3 +1,4 @@
+import React from 'react';
 import nexiconImage from "../../../public/assets/Partners/Nexion.png";
 import macShackImage from "../../../public/assets/Partners/Macshack.png";
 import switchPayImage from "../../../public/assets/Partners/Switchpay.png";
@@ -10,12 +11,28 @@ import podImage from "../../../public/assets/Partners/Pod.png";
 import alviaAmaniImage from "../../../public/assets/Partners/alviarmani.png";
 import centurionImage from "../../../public/assets/Partners/Centurion.png";
 
+const images = [
+    nexiconImage,
+    macShackImage,
+    switchPayImage,
+    oxfordImage,
+    smartFunderImage,
+    weightDoctorImage,
+    merlinMedImage,
+    hearComImage,
+    podImage,
+    alviaAmaniImage,
+    centurionImage
+];
+
 export const Partners = () => {
     return (
-        <div>
-            
+        <div className="grid grid-cols-4 gap-4 p-4">
+            {images.map((image, index) => (
+                <img key={index} src={image.src} alt={`Partner ${index + 1}`} className="w-full border-2 border-green-500 object-contain" />
+            ))}
         </div>
-    )
-}
+    );
+};
 
 export default Partners;
