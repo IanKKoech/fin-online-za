@@ -167,6 +167,8 @@ export const FinFlexiLoans = () => {
           </div>
         </div>
 
+        
+
         <div className="bg-white p-10 text-black bottom-0">
           <p className="text-black text-center align-middle text-3xl sm:text-4xl pt-2">
             We have you covered!

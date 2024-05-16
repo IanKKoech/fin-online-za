@@ -8,6 +8,7 @@ import tempDisability from "../../../public/assets/Layer_1.png";
 import permDisability from "../../../public/assets/Vector.png";
 import death from "../../../public/assets/Layer_1-2.png";
 import retrenchment from "../../../public/assets/Layer_1-1.png";
+import Partners from "@/components/Partners";
 import Image from "next/image";
 
 export const FinShoppingPartner = () => {
@@ -216,15 +217,17 @@ export const FinShoppingPartner = () => {
           We have you covered!
         </p>
         <br />
-        <p>
-          <span className="text-sm sm:text-base text-black text-center align-middle pt-2">
-            All our loans include{" "}
-            <span className="font-bold">Credit Life Insurance,</span>{" "}
-            safeguarding you against unforeseen insurable events that could
-            affect your ability to repay. Gain peace of mind knowing you&apos;re
-            protected. You&apos;ll receive courage for.
-          </span>
-        </p>
+        <div className="flex items-center justify-center">
+          <p>
+            <span className="text-sm sm:text-base text-black text-center align-middle pt-2 pl-4">
+              All our loans include{" "}
+              <span className="font-bold">Credit Life Insurance,</span>{" "}
+              safeguarding you against unforeseen insurable events that could
+              affect your ability to repay. Gain peace of mind knowing
+              you&apos;re protected. You&apos;ll receive courage for.
+            </span>
+          </p>
+        </div>
 
         <br />
         <br />
@@ -265,6 +268,22 @@ export const FinShoppingPartner = () => {
             </div>
             <p className="mt-4 text-center">Retrenchment</p>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-white p-10 text-black bottom-0">
+        <p className="text-black text-center align-middle text-3xl sm:text-4xl pt-2">
+          Our Listed Partners
+        </p>
+        <br />
+        <div className="flex flex-col items-center justify-center">
+          <p>
+            <span className="text-sm sm:text-base text-black text-center align-middle pt-2">
+              Choose your ideal partner from our extensive selection of listed
+              stores
+            </span>
+          </p>
+          <Partners />
         </div>
       </div>
 

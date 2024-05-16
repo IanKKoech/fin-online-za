@@ -27,9 +27,9 @@ const images = [
 
 export const Partners = () => {
     return (
-        <div className="grid grid-cols-4 gap-4 p-4">
+        <div className="grid grid-cols-4 gap-4 p-4 align-middle items-center justify-center">
             {images.map((image, index) => (
-                <img key={index} src={image.src} alt={`Partner ${index + 1}`} className="w-full border-2 border-green-500 object-contain" />
+                <img key={index} src={image.src} alt={`Partner ${index + 1}`} className="w-60 gap-8 h-auto object-contain" />
             ))}
         </div>
     );

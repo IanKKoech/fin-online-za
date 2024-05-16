@@ -30,10 +30,10 @@ const Header = () => {
 
       {/* Navigation Menu */}
       <nav
-        className="hidden md:flex items-center space-x-4 space-y-6"
+        className="hidden md:flex items-center space-x-4  gap-4 mt-3 mb-3"
         style={{ fontFamily: "Poppins" }}
       >
-        <div className="relative">
+        <div className="relative flex items-center ">
           <Link href="#" className="font-normal" onClick={toggleMenu}>
             Our Products
           </Link>
@@ -63,47 +63,44 @@ const Header = () => {
             </div>
           )}
         </div>
-        <div className="relative">
+
+        <div className="relative flex items-center space-y-6">
           <Link href="/register" className="font-normal">
             Join Fin Pay
           </Link>
         </div>
-        <div className="relative">
+
+        <div className="relative flex items-center">
           <Link href="/login" className="font-normal">
             Fin Pay Portal
           </Link>
         </div>
-        <div className="relative">
+
+        <div className="relative flex items-center">
           <Link href="#" className="font-normal">
             Contact Us
           </Link>
         </div>
-        <div className="relative">
+
+        <div className="relative flex items-center ">
           <button
-            className="bg-[white] text-[#31c231] border border-[green] font-normal"
-            style={{
-              borderRadius: "2.5rem",
-              height: "2.5rem",
-              width: "6rem",
-            }}
+            className="bg-[white] text-[#31c231] border border-[green] font-normal hover:bg-[#a9f7a9] hover:text-black"
+            style={{ borderRadius: "2.5rem", height: "2.5rem", width: "6rem" }}
           >
             <Link href="/register">Register</Link>
           </button>
         </div>
 
-        <div className="relative">
+        <div className="relative flex items-center ">
           <button
-            className="bg-[#a9f7a9] text-black font-normal"
-            style={{
-              borderRadius: "4.5rem",
-              height: "2.5rem",
-              width: "6rem",
-            }}
+            className="bg-[#a9f7a9] text-black font-normal hover:bg-white hover:text-[#31c231] hover:border hover:border-[green]"
+            style={{ borderRadius: "4.5rem", height: "2.5rem", width: "6rem" }}
           >
             <Link href="/login">Sign In</Link>
           </button>
         </div>
-        <div className="relative">
+
+        <div className="relative flex items-center">
           <button
             className="mr-4 text-sm"
             style={{ width: "38px", height: "30px" }}
