@@ -71,7 +71,7 @@ export const Benefits = () => {
             </div>
           </div>
 
-          <div className="md:flex md:w-1/2 self-stretch md:order-1 order-0 px-5 justify-center items-center inline-flex md:bg-opacity-0 bg-[#8AF1BB] justify-end">
+          <div className="md:flex md:w-1/2 self-stretch md:order-1 order-0 px-5 items-center inline-flex md:bg-opacity-0 bg-[#8AF1BB] justify-end">
             <img src={lady.src} alt="nice lady" />
           </div>
         </div>
