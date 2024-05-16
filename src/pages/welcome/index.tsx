@@ -18,7 +18,6 @@ import Snap from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 14@
 import payfast from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 15@4x-8.png";
 import ozow from "../../../public/assets/FIN Welcome Page Assets/LOGOS/Asset 16@4x-8.png";
 import Link from "next/link";
-import Image from "next/image";
 
 const WelcomePage = () => {
   return (
