@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Map from "@/components/features/maps/map";
 
 export const FinPayStoreDirectory = () => {
   return (
@@ -64,6 +65,12 @@ export const FinPayStoreDirectory = () => {
           <br />
         </div>
       </div>
+      <div className="flex justify-center items-center bg-white pb-12">
+        <div className="bg-white">
+          <Map />
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
